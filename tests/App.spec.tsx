@@ -1,13 +1,13 @@
 import React from 'react'
 import ShallowRenderer from 'react-test-renderer/shallow'
-import Navbar from 'src/components/navbar'
+import App from 'src/App'
 
-describe('components/navbar', () => {
+describe('App', () => {
     let container
     const renderer = new ShallowRenderer()
 
     beforeEach(() => {
-        container = renderer.render(<Navbar />)
+        container = renderer.render(<App />)
     })
 
     test('should render and match snapshot', () => {
