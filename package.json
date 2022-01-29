@@ -7,12 +7,12 @@
     "start": "webpack-dev-server --open --config configs/webpack.dev.js",
     "build:dev": "webpack --config configs/webpack.dev.js -d",
     "build:prod": "webpack --config configs/webpack.prod.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:update-snapshot": "jest --updateSnapshot",
+    "utest": "jest",
+    "utest:watch": "jest --watch",
+    "utest:update-snapshot": "jest --updateSnapshot",
+    "test": "yarn lint:test && yarn utest",
     "lint:test": "eslint \"src/**/*.{ts,tsx}\" --quiet",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --quiet --fix",
-    "e2e": "cypress open"
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --quiet --fix"
   },
   "author": "senthilc",
   "license": "",
