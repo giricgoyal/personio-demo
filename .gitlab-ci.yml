@@ -53,7 +53,7 @@ setup_job:
       default: [image]
   script:
     - yarn
-  stage: test
+  stage: setup
   allow_failure: false
   artifacts:
     paths:
@@ -63,7 +63,7 @@ test_job:
   inherit:
       default: [image]
   script:
-    - yarn test:unit
+    - yarn test
   stage: test
   allow_failure: false
 
