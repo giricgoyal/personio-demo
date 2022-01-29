@@ -42,16 +42,27 @@ variables:
   REPO_NAME: "personio-demo"
 
 stages:
+  - setup
   - test
   - build
   - deploy
   - cleanup
 
-test_job:
+setup_job:
   inherit:
       default: [image]
   script:
     - yarn
+  stage: test
+  allow_failure: false
+  artifacts:
+    paths:
+    - 'node_modules'
+
+test_job:
+  inherit:
+      default: [image]
+  script:
     - yarn test:unit
   stage: test
   allow_failure: false
@@ -60,7 +71,6 @@ build_job:
   inherit:
     default: [image]
   script:
-    - yarn
     - yarn build
   stage: build
   allow_failure: false
