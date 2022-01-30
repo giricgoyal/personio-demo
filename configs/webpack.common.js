@@ -19,10 +19,10 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.json', '.html'],
-        modules: ['node_modules', path.resolve(__dirname, '..', 'src')],
-    },
-    resolveLoader: {
-        modules: ['node_modules'],
+        alias: {
+            root: path.resolve(__dirname, '..'),
+            src: path.resolve(__dirname, '..', 'src')
+        }
     },
     module: {
         rules: [
