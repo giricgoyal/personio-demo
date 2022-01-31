@@ -1,13 +1,11 @@
 import React from 'react'
-import ShallowRenderer from 'react-test-renderer/shallow'
+import { render } from 'tests/test-utils'
 import Applications from 'src/modules/applications'
 
 describe('modules/applications', () => {
     let container
-    const renderer = new ShallowRenderer()
-
     beforeEach(() => {
-        container = renderer.render(<Applications />)
+        container = render(<Applications />)
     })
 
     test('should render and match snapshot', () => {
