@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <div>
-        Grid
+        Applications
       </div>
     </div>
   </body>,
   "container": <div>
     <div>
-      Grid
+      Applications
     </div>
   </div>,
   "debug": [Function],

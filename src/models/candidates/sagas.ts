@@ -1,14 +1,23 @@
-import { call, fork, put, takeLatest } from 'redux-saga/effects'
+import { call, CallEffect, fork, put, PutEffect, takeLatest } from 'redux-saga/effects'
 import { FETCH_CANDIDATES } from './action-types'
 import * as api from 'src/common/api'
-import { setCandidatesData } from './actions'
+import { setCandidatesData, setIsLoading } from './actions'
+import { ACTION } from './types'
 
-export function* fetchCandidates() {
+export function* fetchCandidates(): Generator<CallEffect<api.AXIOS_RESPONSE> | PutEffect<ACTION>, void, api.API_DATA> {
     try {
-        const result = yield call(api.getData, 'candidates')
-        yield put(setCandidatesData(result?.data))
+        yield put(setIsLoading(true))
+        const result: api.API_DATA = yield call(api.getData, 'candidates')
+        if (result.data) {
+            yield put(setCandidatesData(result?.data))
+        }
+        if (result.error) {
+            console.log(result.error)
+        }
     } catch (error) {
         console.log(error)
+    } finally {
+        yield put(setIsLoading(false))
     }
 }
 

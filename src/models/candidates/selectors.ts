@@ -1,3 +1,7 @@
-const getState = (state) => state?.candidates
+import { CANDIDATE, CANDIDATE_STATE } from './types'
 
-export const getCandidates = (state) => getState(state)?.data
+const getState = (state: CANDIDATE_STATE) => state?.candidates
+
+export const getCandidates = (state: CANDIDATE_STATE): Array<CANDIDATE> => getState(state)?.data ?? []
+
+export const getIsLoading = (state: CANDIDATE_STATE): undefined | boolean => getState(state)?.isLoading

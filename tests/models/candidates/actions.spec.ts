@@ -1,5 +1,5 @@
-import { FETCH_CANDIDATES, SET_CANDIDATES_DATA } from 'src/models/candidates/action-types'
-import { fetchCandidates, setCandidatesData } from 'src/models/candidates/actions'
+import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA } from 'src/models/candidates/action-types'
+import { fetchCandidates, setCandidatesData, setIsLoading } from 'src/models/candidates/actions'
 
 describe('models/candidates/actions', () => {
     describe('fetchCandidates()', () => {
@@ -14,7 +14,20 @@ describe('models/candidates/actions', () => {
         test('should return correct data', () => {
             expect(setCandidatesData([{ name: 'John Doe' }])).toStrictEqual({
                 type: SET_CANDIDATES_DATA,
-                payload: [{ name: 'John Doe' }],
+                payload: {
+                    data: [{ name: 'John Doe' }],
+                },
+            })
+        })
+    })
+
+    describe('setIsLoading()', () => {
+        test('should return correct data', () => {
+            expect(setIsLoading(true)).toStrictEqual({
+                type: FETCH_CANDIDATES_SET_LOADING,
+                payload: {
+                    isLoading: true,
+                },
             })
         })
     })
