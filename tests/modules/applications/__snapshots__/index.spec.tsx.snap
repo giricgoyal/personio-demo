@@ -5,14 +5,162 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        Applications
+      <div
+        class="grid"
+      >
+        <div
+          class="grid__header"
+        >
+          <div
+            class="grid__header__left"
+          >
+            <div
+              class="grid__header__left__title"
+            >
+              Applications
+            </div>
+            <div
+              class="grid__header__left__data-count"
+            >
+              (
+              0
+              /
+              0
+              )
+            </div>
+          </div>
+          <div
+            class="grid__header__right"
+          >
+            <div>
+              Sort By:
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid__table grid__table--grid-8"
+        >
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Id
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Name
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Email
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Birth Date
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Application Date
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Position Applied
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Status
+          </div>
+          <div
+            class="grid__table__cell grid__table__cell--header"
+          >
+            Years of experience
+          </div>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      Applications
+    <div
+      class="grid"
+    >
+      <div
+        class="grid__header"
+      >
+        <div
+          class="grid__header__left"
+        >
+          <div
+            class="grid__header__left__title"
+          >
+            Applications
+          </div>
+          <div
+            class="grid__header__left__data-count"
+          >
+            (
+            0
+            /
+            0
+            )
+          </div>
+        </div>
+        <div
+          class="grid__header__right"
+        >
+          <div>
+            Sort By:
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid__table grid__table--grid-8"
+      >
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Id
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Name
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Email
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Birth Date
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Application Date
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Position Applied
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Status
+        </div>
+        <div
+          class="grid__table__cell grid__table__cell--header"
+        >
+          Years of experience
+        </div>
+      </div>
     </div>
   </div>,
   "debug": [Function],

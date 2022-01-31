@@ -1,56 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/grid should render and match snapshot 1`] = `
+exports[`components/grid/header should render and match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="grid"
-      >
-        <div
-          class="grid__header"
-        >
-          <div
-            class="grid__header__left"
-          >
-            <div
-              class="grid__header__left__title"
-            />
-            <div
-              class="grid__header__left__data-count"
-            >
-              (
-              0
-              /
-              0
-              )
-            </div>
-          </div>
-          <div
-            class="grid__header__right"
-          >
-            <div>
-              Sort By:
-            </div>
-          </div>
-        </div>
-        <div
-          class="grid__table grid__table--grid-1"
-        >
-          <div
-            class="grid__table__cell grid__table__cell--header"
-          >
-            col1
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="grid"
-    >
       <div
         class="grid__header"
       >
@@ -59,14 +13,14 @@ Object {
         >
           <div
             class="grid__header__left__title"
-          />
+          >
+            Some title
+          </div>
           <div
             class="grid__header__left__data-count"
           >
             (
-            0
             /
-            0
             )
           </div>
         </div>
@@ -78,13 +32,33 @@ Object {
           </div>
         </div>
       </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="grid__header"
+    >
       <div
-        class="grid__table grid__table--grid-1"
+        class="grid__header__left"
       >
         <div
-          class="grid__table__cell grid__table__cell--header"
+          class="grid__header__left__title"
         >
-          col1
+          Some title
+        </div>
+        <div
+          class="grid__header__left__data-count"
+        >
+          (
+          /
+          )
+        </div>
+      </div>
+      <div
+        class="grid__header__right"
+      >
+        <div>
+          Sort By:
         </div>
       </div>
     </div>

@@ -4,9 +4,15 @@ import Grid from 'src/components/grid'
 
 describe('components/grid', () => {
     let container
+    const columnDef = [
+        {
+            title: 'col1',
+            propBinding: 'col1',
+        },
+    ]
 
     beforeEach(() => {
-        container = render(<Grid data={[]} />)
+        container = render(<Grid data={[]} columnDef={columnDef} />)
     })
 
     test('should render and match snapshot', () => {
