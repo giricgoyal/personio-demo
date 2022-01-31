@@ -20,7 +20,9 @@ Object {
             class="grid__header__left__data-count"
           >
             (
+            0
             /
+            0
             )
           </div>
         </div>
@@ -28,7 +30,34 @@ Object {
           class="grid__header__right"
         >
           <div>
-            Sort By:
+            <label
+              class="select"
+            >
+              <span
+                class="select__label"
+              >
+                Sort by:
+              </span>
+              <select
+                class="select__element"
+                data-testid="select"
+              >
+                <option
+                  selected=""
+                  value="col1"
+                >
+                  col1
+                </option>
+              </select>
+            </label>
+            <button
+              class="button button--tertiary"
+              data-testid="sort-order-button"
+            >
+              <i
+                class="fas fa-arrow-up"
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -50,7 +79,9 @@ Object {
           class="grid__header__left__data-count"
         >
           (
+          0
           /
+          0
           )
         </div>
       </div>
@@ -58,7 +89,34 @@ Object {
         class="grid__header__right"
       >
         <div>
-          Sort By:
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            >
+              Sort by:
+            </span>
+            <select
+              class="select__element"
+              data-testid="select"
+            >
+              <option
+                selected=""
+                value="col1"
+              >
+                col1
+              </option>
+            </select>
+          </label>
+          <button
+            class="button button--tertiary"
+            data-testid="sort-order-button"
+          >
+            <i
+              class="fas fa-arrow-up"
+            />
+          </button>
         </div>
       </div>
     </div>

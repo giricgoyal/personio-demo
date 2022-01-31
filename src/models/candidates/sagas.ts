@@ -4,7 +4,7 @@ import * as api from 'src/common/api'
 import { setCandidatesData, setIsLoading } from './actions'
 import { ACTION } from './types'
 
-export function* fetchCandidates(): Generator<CallEffect<api.AXIOS_RESPONSE> | PutEffect<ACTION>, void, api.API_DATA> {
+export function* fetchCandidates(): Generator<CallEffect<api.API_DATA> | PutEffect<ACTION>, void, api.API_DATA> {
     try {
         yield put(setIsLoading(true))
         const result: api.API_DATA = yield call(api.getData, 'candidates')

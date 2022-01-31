@@ -1,12 +1,15 @@
 import React, { ReactElement } from 'react'
 import GridHeader from './header'
+import { getData, getSortableColumns } from './utils'
 
 export type Column = {
     title: string
     propBinding: string
+    sort?: boolean
+    filter?: boolean
 }
 
-type Row = {
+export type Row = {
     [key: string]: string | number
 }
 
@@ -14,15 +17,26 @@ type Props = {
     columnDef: Array<Column>
     data: Array<Row>
     isLoading?: boolean
-    title?: string
+    title: string
+    sortBy: string | null
+    onSortChange: (value: string) => void
 }
 
 export default function Grid(props: Props): ReactElement {
-    const { columnDef, data, isLoading, title } = props
-    console.log(data)
+    const { columnDef, data, isLoading, title, sortBy, onSortChange } = props
+    const sortableColumns = getSortableColumns(columnDef)
+    const sortedFilteredData = getData(data, sortBy)
+
     return (
         <div className="grid">
-            <GridHeader title={title} dataCount={data.length} totalCount={data.length} />
+            <GridHeader
+                title={title}
+                dataCount={data.length}
+                totalCount={sortedFilteredData.length}
+                sortableColumns={sortableColumns}
+                sortBy={sortBy}
+                onSortChange={onSortChange}
+            />
             {isLoading ? (
                 <div className="grid__loading">
                     <div>loading</div>
@@ -34,7 +48,7 @@ export default function Grid(props: Props): ReactElement {
                             {column.title}
                         </div>
                     ))}
-                    {data.map((row, rowIndex) =>
+                    {sortedFilteredData.map((row, rowIndex) =>
                         columnDef.map((column, colIndex) => (
                             <div className="grid__table__cell" key={`cell_${rowIndex}_${colIndex}`}>
                                 {row[column.propBinding]}

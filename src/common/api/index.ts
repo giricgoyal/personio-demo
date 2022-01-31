@@ -20,7 +20,7 @@ type params = {
 
 const getUrl = (path: string): string => `${API_BASE_URL}/${path}`
 
-export const getData = async (path: string, params?: params): Promise<AXIOS_RESPONSE> => {
+export const getData = async (path: string, params?: params): Promise<API_DATA> => {
     const url = getUrl(path)
     const { data } = await axios.get(url, {
         params,

@@ -1,23 +1,24 @@
 import React from 'react'
 import { render as rtlRender } from '@testing-library/react'
-import ShallowRenderer from 'react-test-renderer/shallow'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
-// Import your own reducer
 import rootReducer from 'src/redux/reducers'
+import { MemoryRouter } from 'react-router'
+
+function makeTestStore(preloadedState = {}) {
+    const store = configureStore({ reducer: rootReducer, preloadedState })
+    store.dispatch = jest.fn()
+    return store
+}
 
 function render(
     ui,
     { preloadedState = {}, store = configureStore({ reducer: rootReducer, preloadedState }), ...renderOptions } = {},
 ) {
-    function Wrapper({ children }) {
-        return <Provider store={store}>{children}</Provider>
-    }
-
-    return rtlRender(ui, { wrapper: Wrapper, ...renderOptions })
+    return rtlRender(<Provider store={store}>{ui}</Provider>, { wrapper: MemoryRouter, ...renderOptions })
 }
 
 // re-export everything
 export * from '@testing-library/react'
 // override render method
-export { render }
+export { render, makeTestStore }

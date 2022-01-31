@@ -20,10 +20,12 @@ export const getColumns = (): Array<Column> => [
     {
         title: 'Application Date',
         propBinding: 'application_date',
+        sort: true,
     },
     {
         title: 'Position Applied',
         propBinding: 'position_applied',
+        sort: true,
     },
     {
         title: 'Status',
@@ -32,5 +34,6 @@ export const getColumns = (): Array<Column> => [
     {
         title: 'Years of experience',
         propBinding: 'year_of_experience',
+        sort: true,
     },
 ]
