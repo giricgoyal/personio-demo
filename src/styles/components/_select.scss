@@ -1,0 +1,11 @@
+.select {
+    &__label {
+        margin-right: 5px;
+    }
+
+    &__element {
+        border: 0px;
+        padding: 5px;
+        cursor: pointer;
+    }
+}

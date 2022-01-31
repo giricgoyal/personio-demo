@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component/button should render and match snapshot 1`] = `
+<div>
+  <button
+    class="button button--primary"
+    data-testid="button"
+  >
+    Label
+  </button>
+</div>
+`;
