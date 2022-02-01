@@ -33,7 +33,7 @@ exports[`modules/applications When api error occurs should render and match snap
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -73,7 +73,7 @@ exports[`modules/applications When api error occurs should render and match snap
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -108,7 +108,7 @@ exports[`modules/applications When api error occurs should render and match snap
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -165,7 +165,7 @@ exports[`modules/applications When component is rendered first should render and
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -205,7 +205,7 @@ exports[`modules/applications When component is rendered first should render and
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -240,7 +240,7 @@ exports[`modules/applications When component is rendered first should render and
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -252,42 +252,85 @@ exports[`modules/applications When component is rendered first should render and
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Id
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Id
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Email
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Birth Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Application Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        <i
+          class="fas fa-arrow-up "
+        />
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Position Applied
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Status
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Years of experience
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Years of experience
+        </div>
+        
       </div>
     </div>
   </div>
@@ -327,7 +370,7 @@ exports[`modules/applications When data is loading should render and match snaps
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -367,7 +410,7 @@ exports[`modules/applications When data is loading should render and match snaps
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -402,7 +445,7 @@ exports[`modules/applications When data is loading should render and match snaps
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -412,7 +455,7 @@ exports[`modules/applications When data is loading should render and match snaps
       class="grid__loading"
     >
       <i
-        class="fas fa-spinner fa-spin fa-2x"
+        class="fas fa-spinner fa-2x fa-spin"
       />
     </div>
   </div>
@@ -452,7 +495,7 @@ exports[`modules/applications When data is present in store When sort is changed
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -492,7 +535,7 @@ exports[`modules/applications When data is present in store When sort is changed
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -527,7 +570,7 @@ exports[`modules/applications When data is present in store When sort is changed
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -539,42 +582,85 @@ exports[`modules/applications When data is present in store When sort is changed
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Id
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Id
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Email
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Birth Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Application Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Position Applied
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        <i
+          class="fas fa-arrow-up "
+        />
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Status
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Years of experience
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Years of experience
+        </div>
+        
       </div>
       <div
         class="grid__table__cell"
@@ -674,7 +760,7 @@ exports[`modules/applications When data is present in store should render and ma
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -714,7 +800,7 @@ exports[`modules/applications When data is present in store should render and ma
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -749,7 +835,7 @@ exports[`modules/applications When data is present in store should render and ma
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -761,42 +847,85 @@ exports[`modules/applications When data is present in store should render and ma
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Id
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Id
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Email
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Birth Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Application Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        <i
+          class="fas fa-arrow-up "
+        />
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Position Applied
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Status
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Years of experience
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Years of experience
+        </div>
+        
       </div>
       <div
         class="grid__table__cell"

@@ -33,7 +33,7 @@ exports[`components/grid When loading should render and match snapshot 1`] = `
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -63,7 +63,7 @@ exports[`components/grid When loading should render and match snapshot 1`] = `
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -88,7 +88,7 @@ exports[`components/grid When loading should render and match snapshot 1`] = `
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -98,7 +98,7 @@ exports[`components/grid When loading should render and match snapshot 1`] = `
       class="grid__loading"
     >
       <i
-        class="fas fa-spinner fa-spin fa-2x"
+        class="fas fa-spinner fa-2x fa-spin"
       />
     </div>
   </div>
@@ -138,7 +138,7 @@ exports[`components/grid When not loading When data is present should render and
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -168,7 +168,7 @@ exports[`components/grid When not loading When data is present should render and
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -193,7 +193,7 @@ exports[`components/grid When not loading When data is present should render and
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>
@@ -205,7 +205,14 @@ exports[`components/grid When not loading When data is present should render and
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        <i
+          class="fas fa-arrow-up "
+        />
       </div>
       <div
         class="grid__table__cell"
@@ -260,7 +267,7 @@ exports[`components/grid When not loading When error occured should render and m
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -290,7 +297,7 @@ exports[`components/grid When not loading When error occured should render and m
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -315,7 +322,7 @@ exports[`components/grid When not loading When error occured should render and m
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>

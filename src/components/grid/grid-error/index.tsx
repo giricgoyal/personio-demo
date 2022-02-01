@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Icon from 'src/components/icon'
 
 type Props = {
     error?: string
@@ -17,7 +18,7 @@ export default function GridError(props: Props): ReactElement | null {
             {error}
             <div>
                 <a onClick={onGridRefresh} data-testid="refresh-grid-button">
-                    <i className="fas fa-sync fa-2x"></i>
+                    <Icon icon="refresh" size="medium" />
                 </a>
             </div>
         </div>

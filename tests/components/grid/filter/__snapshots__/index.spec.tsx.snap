@@ -4,7 +4,7 @@ exports[`components/grid/filter When filterBy is provided should render and matc
 <div>
   <div>
     <i
-      class="fas fa-filter"
+      class="fas fa-filter "
     />
     <label
       class="select"
@@ -56,7 +56,7 @@ exports[`components/grid/filter should render and match snapshot 1`] = `
 <div>
   <div>
     <i
-      class="fas fa-filter"
+      class="fas fa-filter "
     />
     <label
       class="select"

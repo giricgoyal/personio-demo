@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/icon When invalid icon is provided should not render and match snapshot 1`] = `<div />`;
+
+exports[`components/icon When spin is provided should render and match snapshot 1`] = `
+<div>
+  <i
+    class="fas fa-spinner  fa-spin"
+  />
+</div>
+`;
+
+exports[`components/icon should render and match snapshot 1`] = `
+<div>
+  <i
+    class="fas fa-filter "
+  />
+</div>
+`;

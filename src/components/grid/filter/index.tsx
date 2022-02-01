@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react'
 import ComboBox from 'src/components/combo-input'
+import Icon from 'src/components/icon'
 import Select from 'src/components/select'
 import { getFilterBy } from '../utils'
 
@@ -36,7 +37,7 @@ export default function Filter(props: Props): ReactElement {
 
     return (
         <div className={className}>
-            <i className="fas fa-filter"></i>
+            <Icon icon="filter" />
             <Select
                 data-testid="filterby-select"
                 options={filterOptions}

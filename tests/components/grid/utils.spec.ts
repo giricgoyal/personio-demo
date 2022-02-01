@@ -61,7 +61,7 @@ describe('components/grid/utils', () => {
     describe('getSortParams()', () => {
         test('should return correct data', () => {
             expect(getSortParams('-column1')).toStrictEqual({
-                col: 'column1',
+                sortByCol: 'column1',
                 isDescending: true,
             })
         })

@@ -6,7 +6,7 @@ exports[`components/grid/grid-loader When lodaing should render and match snapsh
     class="grid__loading"
   >
     <i
-      class="fas fa-spinner fa-spin fa-2x"
+      class="fas fa-spinner fa-2x fa-spin"
     />
   </div>
 </div>

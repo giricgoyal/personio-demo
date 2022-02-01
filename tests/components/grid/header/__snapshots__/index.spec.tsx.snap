@@ -33,7 +33,7 @@ Object {
             class="grid__header__right__filter"
           >
             <i
-              class="fas fa-filter"
+              class="fas fa-filter "
             />
             <label
               class="select"
@@ -63,7 +63,7 @@ Object {
             class="grid__header__right__sort"
           >
             <i
-              class="fas fa-sort"
+              class="fas fa-sort "
             />
             <label
               class="select"
@@ -88,7 +88,7 @@ Object {
               data-testid="sort-order-button"
             >
               <i
-                class="fas fa-arrow-up"
+                class="fas fa-arrow-up "
               />
             </button>
           </div>
@@ -125,7 +125,7 @@ Object {
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -155,7 +155,7 @@ Object {
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -180,7 +180,7 @@ Object {
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-up "
             />
           </button>
         </div>

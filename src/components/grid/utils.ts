@@ -14,11 +14,11 @@ export const getSortableColumns = (columnDef: Array<Column>): Array<SortOption> 
 export const getSortParams = (
     sortBy: SortBy,
 ): {
-    col: string
+    sortByCol: string
     isDescending: boolean
 } => {
     return {
-        col: (sortBy || '').replace('-', ''),
+        sortByCol: (sortBy || '').replace('-', ''),
         isDescending: (sortBy || '').includes('-'),
     }
 }
@@ -40,10 +40,10 @@ export const getData = (data: Array<Row>, sortBy?: string | null, filterBy?: Fil
     const filteredData = data.filter(filterFn)
 
     if (sortBy) {
-        const { col, isDescending } = getSortParams(sortBy)
+        const { sortByCol, isDescending } = getSortParams(sortBy)
 
         filteredData.sort((a, b) => {
-            if (a[col] > b[col]) {
+            if (a[sortByCol] > b[sortByCol]) {
                 return isDescending ? -1 : 1
             } else {
                 return isDescending ? 1 : -1

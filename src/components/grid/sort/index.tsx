@@ -2,6 +2,7 @@ import React, { ReactElement, useCallback } from 'react'
 import Select from 'src/components/select'
 import Button from 'src/components/button'
 import { getSortParams } from '../utils'
+import Icon from 'src/components/icon'
 
 export type SortOption = {
     label: string
@@ -19,7 +20,7 @@ type Props = {
 
 export default function Sort(props: Props): ReactElement {
     const { className, sortOptions, onChange, sortBy } = props
-    const { col: sortByCol, isDescending } = getSortParams(sortBy)
+    const { sortByCol, isDescending } = getSortParams(sortBy)
 
     const getSortValue = (value, isDescending) => `${isDescending ? '-' : ''}${value}`
 
@@ -36,10 +37,10 @@ export default function Sort(props: Props): ReactElement {
 
     return (
         <div className={className}>
-            <i className="fas fa-sort"></i>
+            <Icon icon="sort" />
             <Select data-testid="select" options={sortOptions} onChange={handleSelectChange} selected={sortByCol} />
             <Button data-testid="sort-order-button" onClick={handleSortOrderChange} type="tertiary">
-                {isDescending ? <i className="fas fa-arrow-down"></i> : <i className="fas fa-arrow-up"></i>}
+                <Icon icon={isDescending ? 'arrow-down' : 'arrow-up'} />
             </Button>
         </div>
     )

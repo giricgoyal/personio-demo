@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Icon from 'src/components/icon'
 
 type Props = {
     isLoading?: boolean
@@ -12,7 +13,7 @@ export default function GridLoader(props: Props): ReactElement | null {
 
     return (
         <div className="grid__loading">
-            <i className="fas fa-spinner fa-spin fa-2x"></i>
+            <Icon icon="spinner" spin size="medium" />
         </div>
     )
 }
