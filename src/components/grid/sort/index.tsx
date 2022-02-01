@@ -8,13 +8,14 @@ export type SortOption = {
 }
 
 type Props = {
+    className?: string
     sortOptions: Array<SortOption>
     onChange: (value: string) => void
     sortBy: string | null
 }
 
 export default function Sort(props: Props): ReactElement {
-    const { sortOptions, onChange, sortBy } = props
+    const { className, sortOptions, onChange, sortBy } = props
     const getSortBy = (sortBy) => sortBy.replace('-', '')
     const isDescending = (sortBy) => sortBy.includes('-')
 
@@ -33,7 +34,7 @@ export default function Sort(props: Props): ReactElement {
     }, [sortBy, onChange])
 
     return (
-        <div>
+        <div className={className}>
             <i className="fas fa-sort"></i>
             <Select
                 data-testid="select"

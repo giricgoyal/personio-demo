@@ -29,7 +29,9 @@ Object {
         <div
           class="grid__header__right"
         >
-          <div>
+          <div
+            class="grid__header__right__filter"
+          >
             <i
               class="fas fa-filter"
             />
@@ -57,7 +59,9 @@ Object {
               value=""
             />
           </div>
-          <div>
+          <div
+            class="grid__header__right__sort"
+          >
             <i
               class="fas fa-sort"
             />
@@ -117,7 +121,9 @@ Object {
       <div
         class="grid__header__right"
       >
-        <div>
+        <div
+          class="grid__header__right__filter"
+        >
           <i
             class="fas fa-filter"
           />
@@ -145,7 +151,9 @@ Object {
             value=""
           />
         </div>
-        <div>
+        <div
+          class="grid__header__right__sort"
+        >
           <i
             class="fas fa-sort"
           />

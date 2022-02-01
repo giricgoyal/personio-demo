@@ -6,6 +6,8 @@
     &__header {
         display: flex;
         flex-direction: row;
+        height: 50px;
+        align-items: center;
 
         &__left {
             flex: 1;
@@ -24,8 +26,17 @@
         &__right {
             flex: 1;
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            &__filter {
+                padding-right: 16px;
+                border-right: 1px solid $grey-300;
+            }
+
+            &__sort {
+                margin-left: 16px;
+            }
         }
     }
 
@@ -39,9 +50,10 @@
     }
 
     &__table {
+        flex: 1;
         max-height: 100%;
         overflow: auto;
-        box-shadow: 2px 0px 10px 5px $grey-300;
+        box-shadow: 2px 0px 10px 5px $grey-100;
         margin-top: 10px;
         display: grid;
 
@@ -51,12 +63,21 @@
 
         &__cell {
             padding: 10px;
+            border-bottom: 1px solid $grey-300;
+
+            &:not(:nth-child(8n)) {
+                border-right: 1px solid $grey-300;
+            }
 
             &--header {
                 font-weight: 700;
                 position: sticky;
                 top: 0px;
-                background-color: $grey-300;
+                background-color: $blue-200;
+
+                &:not(:nth-child(8)) {
+                    border-right: 1px solid white;
+                }
             }
         }
     }
