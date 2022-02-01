@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid/grid-loader When lodaing should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid__loading"
+  >
+    <i
+      class="fas fa-spinner fa-spin fa-2x"
+    />
+  </div>
+</div>
+`;
+
+exports[`components/grid/grid-loader should not render and match snapshot 1`] = `<div />`;

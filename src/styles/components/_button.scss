@@ -1,8 +1,10 @@
 .button {
     cursor: pointer;
+    min-width: 40px;
 
     &--tertiary {
         background-color: $white;
         border: 0px;
+        color: $blue-500;
     }
 }

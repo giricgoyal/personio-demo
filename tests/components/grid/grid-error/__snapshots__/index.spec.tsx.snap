@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid/grid-error When no error should not render and match snapshot 1`] = `<div />`;
+
+exports[`components/grid/grid-error should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid__error"
+  >
+    an error
+    <div>
+      <a
+        data-testid="refresh-grid-button"
+      >
+        <i
+          class="fas fa-sync fa-2x"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

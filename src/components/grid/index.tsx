@@ -1,6 +1,10 @@
 import React, { ReactElement } from 'react'
-import Button from '../button'
 import { FilterBy } from './filter'
+import GridError from './grid-error'
+import GridLoader from './grid-loader'
+import GridTable from './grid-table'
+import GridTableBody from './grid-table-body'
+import GridTableHeader from './grid-table-header'
 import GridHeader from './header'
 import { getData, getFilterOptions, getSortableColumns } from './utils'
 
@@ -48,36 +52,13 @@ export default function Grid(props: Props): ReactElement {
                 onSortChange={onSortChange}
                 onFilterChange={onFilterChange}
             />
-            {error && (
-                <div className="grid__error">
-                    {error}
-                    <div>
-                        <Button onClick={onGridRefresh} type="tertiary" data-testid="refresh-grid-button">
-                            <i className="fas fa-sync fa-2x"></i>
-                        </Button>
-                    </div>
-                </div>
-            )}
-            {isLoading && (
-                <div className="grid__loading">
-                    <i className="fas fa-spinner fa-spin fa-2x"></i>
-                </div>
-            )}
+            <GridError error={error} onGridRefresh={onGridRefresh} />
+            <GridLoader isLoading={isLoading} />
             {!error && !isLoading && (
-                <div className={`grid__table grid__table--grid-${columnDef.length}`}>
-                    {columnDef.map((column) => (
-                        <div className="grid__table__cell grid__table__cell--header" key={column.title}>
-                            {column.title}
-                        </div>
-                    ))}
-                    {sortedFilteredData.map((row, rowIndex) =>
-                        columnDef.map((column, colIndex) => (
-                            <div className="grid__table__cell" key={`cell_${rowIndex}_${colIndex}`}>
-                                {row[column.propBinding]}
-                            </div>
-                        )),
-                    )}
-                </div>
+                <GridTable columns={columnDef.length}>
+                    <GridTableHeader columnDef={columnDef} />
+                    <GridTableBody columnDef={columnDef} data={sortedFilteredData} />
+                </GridTable>
             )}
         </div>
     )

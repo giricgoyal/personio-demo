@@ -32,10 +32,16 @@
             &__filter {
                 padding-right: 16px;
                 border-right: 1px solid $grey-300;
+                display: flex;
+                align-items: center;
+                gap: 10px;
             }
 
             &__sort {
                 margin-left: 16px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
             }
         }
     }
@@ -47,15 +53,17 @@
         display: flex;
         flex: 1;
         flex-direction: column;
+        gap: 10px;
     }
 
     &__table {
-        flex: 1;
-        max-height: 100%;
+        max-height: calc(100% - 60px);
         overflow: auto;
         box-shadow: 2px 0px 10px 5px $grey-100;
         margin-top: 10px;
         display: grid;
+        background-color: white;
+        border-radius: 5px;
 
         &--grid-8 {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

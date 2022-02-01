@@ -326,14 +326,13 @@ exports[`components/grid When not loading When error occured should render and m
     >
       an error occured
       <div>
-        <button
-          class="button button--tertiary"
+        <a
           data-testid="refresh-grid-button"
         >
           <i
             class="fas fa-sync fa-2x"
           />
-        </button>
+        </a>
       </div>
     </div>
   </div>

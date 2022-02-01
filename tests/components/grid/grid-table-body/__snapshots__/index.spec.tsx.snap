@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid/grid-table-body should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid__table__cell"
+  >
+    John
+  </div>
+  <div
+    class="grid__table__cell"
+  >
+    Jane
+  </div>
+  <div
+    class="grid__table__cell"
+  >
+    Ray
+  </div>
+</div>
+`;

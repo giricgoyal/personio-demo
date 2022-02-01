@@ -24,3 +24,17 @@ li {
     display: inline-block;
     margin: 0 10px;
 }
+
+button,
+input,
+select {
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    color: $blue-500;
+}
