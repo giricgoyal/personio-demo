@@ -1,5 +1,134 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`modules/applications When api error occurs should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="grid__header"
+    >
+      <div
+        class="grid__header__left"
+      >
+        <div
+          class="grid__header__left__title"
+        >
+          Applications
+        </div>
+        <div
+          class="grid__header__left__data-count"
+        >
+          (
+          0
+          /
+          0
+          )
+        </div>
+      </div>
+      <div
+        class="grid__header__right"
+      >
+        <div>
+          <i
+            class="fas fa-filter"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
+            >
+              <option
+                value="name"
+              >
+                Name
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="status"
+              >
+                Status
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="select"
+            >
+              <option
+                selected=""
+                value="application_date"
+              >
+                Application Date
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="year_of_experience"
+              >
+                Years of experience
+              </option>
+            </select>
+          </label>
+          <button
+            class="button button--tertiary"
+            data-testid="sort-order-button"
+          >
+            <i
+              class="fas fa-arrow-up"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid__error"
+    >
+      An error occured
+      <div>
+        <button
+          class="button button--tertiary"
+          data-testid="refresh-grid-button"
+        >
+          <i
+            class="fas fa-sync fa-2x"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`modules/applications When component is rendered first should render and match snapshot 1`] = `
 <div>
   <div
@@ -110,6 +239,7 @@ exports[`modules/applications When component is rendered first should render and
         </div>
       </div>
     </div>
+    
     <div
       class="grid__table grid__table--grid-8"
     >
@@ -268,14 +398,13 @@ exports[`modules/applications When data is loading should render and match snaps
         </div>
       </div>
     </div>
+    
     <div
       class="grid__loading"
     >
-      <div>
-        <i
-          class="fas fa-spinner fa-spin fa-2x"
-        />
-      </div>
+      <i
+        class="fas fa-spinner fa-spin fa-2x"
+      />
     </div>
   </div>
 </div>
@@ -391,6 +520,7 @@ exports[`modules/applications When data is present in store When sort is changed
         </div>
       </div>
     </div>
+    
     <div
       class="grid__table grid__table--grid-8"
     >
@@ -609,6 +739,7 @@ exports[`modules/applications When data is present in store should render and ma
         </div>
       </div>
     </div>
+    
     <div
       class="grid__table grid__table--grid-8"
     >

@@ -29,12 +29,13 @@
         }
     }
 
-    &__loading {
+    &__loading,
+    &__error {
         align-items: center;
+        justify-content: center;
         display: flex;
         flex: 1;
-        flex-direction: row;
-        margin: auto;
+        flex-direction: column;
     }
 
     &__table {

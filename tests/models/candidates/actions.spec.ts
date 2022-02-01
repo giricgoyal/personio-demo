@@ -1,5 +1,10 @@
-import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA } from 'src/models/candidates/action-types'
-import { fetchCandidates, setCandidatesData, setIsLoading } from 'src/models/candidates/actions'
+import {
+    FETCH_CANDIDATES,
+    FETCH_CANDIDATES_SET_LOADING,
+    SET_CANDIDATES_DATA,
+    SET_ERROR,
+} from 'src/models/candidates/action-types'
+import { fetchCandidates, setCandidatesData, setError, setIsLoading } from 'src/models/candidates/actions'
 
 describe('models/candidates/actions', () => {
     describe('fetchCandidates()', () => {
@@ -27,6 +32,17 @@ describe('models/candidates/actions', () => {
                 type: FETCH_CANDIDATES_SET_LOADING,
                 payload: {
                     isLoading: true,
+                },
+            })
+        })
+    })
+
+    describe('setError()', () => {
+        test('should return correct data', () => {
+            expect(setError('an error occured')).toStrictEqual({
+                type: SET_ERROR,
+                payload: {
+                    error: 'an error occured',
                 },
             })
         })

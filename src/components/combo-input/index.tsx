@@ -32,7 +32,7 @@ export default function ComboBox(props: Props): ReactElement {
             {dataList.length > 0 && (
                 <datalist id={id}>
                     {dataList.map((option) => (
-                        <option value={option} />
+                        <option value={option} key={option} />
                     ))}
                 </datalist>
             )}

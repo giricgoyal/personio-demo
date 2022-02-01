@@ -1,4 +1,4 @@
-import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA } from './action-types'
+import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA, SET_ERROR } from './action-types'
 import { CANDIDATE } from './types'
 
 export const fetchCandidates = (): {
@@ -32,5 +32,19 @@ export const setIsLoading = (
     type: FETCH_CANDIDATES_SET_LOADING,
     payload: {
         isLoading,
+    },
+})
+
+export const setError = (
+    error: string,
+): {
+    type: string
+    payload: {
+        error: string
+    }
+} => ({
+    type: SET_ERROR,
+    payload: {
+        error,
     },
 })

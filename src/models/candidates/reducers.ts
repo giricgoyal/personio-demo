@@ -1,9 +1,10 @@
-import { FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA } from './action-types'
+import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA, SET_ERROR } from './action-types'
 import { ACTION, CANDIDATE } from './types'
 
 export const initialState = {
     data: [],
     isLoading: false,
+    error: '',
 }
 
 const candidates = (
@@ -12,9 +13,17 @@ const candidates = (
 ): {
     data: Array<CANDIDATE>
     isLoading: boolean
+    error: string
 } => {
     const { type, payload } = action
     switch (type) {
+        case FETCH_CANDIDATES: {
+            return {
+                ...state,
+                error: '',
+                data: [],
+            }
+        }
         case SET_CANDIDATES_DATA: {
             return {
                 ...state,
@@ -22,6 +31,12 @@ const candidates = (
             }
         }
         case FETCH_CANDIDATES_SET_LOADING: {
+            return {
+                ...state,
+                ...payload,
+            }
+        }
+        case SET_ERROR: {
             return {
                 ...state,
                 ...payload,

@@ -14,6 +14,7 @@ export type ACTION = {
     payload?: {
         isLoading?: boolean
         data?: Array<CANDIDATE>
+        error?: string
     }
 }
 
@@ -21,5 +22,6 @@ export type CANDIDATE_STATE = {
     candidates: {
         data?: Array<CANDIDATE>
         isLoading?: boolean
+        error?: string
     }
 }

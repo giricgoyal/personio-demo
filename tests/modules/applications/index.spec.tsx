@@ -79,4 +79,28 @@ describe('modules/applications', () => {
             })
         })
     })
+    describe('When api error occurs', () => {
+        beforeEach(() => {
+            store = makeTestStore({
+                candidates: {
+                    error: 'An error occured',
+                },
+            })
+            ;({ container, getByTestId } = render(<Applications />, { store }))
+        })
+
+        test('should render and match snapshot', () => {
+            expect(container).toMatchSnapshot()
+        })
+
+        describe('When grid is refreshed', () => {
+            beforeEach(() => {
+                fireEvent.click(getByTestId('refresh-grid-button'))
+            })
+
+            test('should call the fetchCandidates action', () => {
+                expect(store.dispatch).toHaveBeenCalledWith(fetchCandidates())
+            })
+        })
+    })
 })

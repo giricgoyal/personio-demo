@@ -1,7 +1,7 @@
 import { call, CallEffect, fork, put, PutEffect, takeLatest } from 'redux-saga/effects'
 import { FETCH_CANDIDATES } from './action-types'
 import * as api from 'src/common/api'
-import { setCandidatesData, setIsLoading } from './actions'
+import { setCandidatesData, setError, setIsLoading } from './actions'
 import { ACTION } from './types'
 
 export function* fetchCandidates(): Generator<CallEffect<api.API_DATA> | PutEffect<ACTION>, void, api.API_DATA> {
@@ -10,12 +10,12 @@ export function* fetchCandidates(): Generator<CallEffect<api.API_DATA> | PutEffe
         const result: api.API_DATA = yield call(api.getData, 'candidates')
         if (result.data) {
             yield put(setCandidatesData(result?.data))
-        }
-        if (result.error) {
-            console.log(result.error)
+            yield put(setError(''))
+        } else if (result.error) {
+            throw result.error
         }
     } catch (error) {
-        console.log(error)
+        yield put(setError('An error occured'))
     } finally {
         yield put(setIsLoading(false))
     }

@@ -1,4 +1,4 @@
-import { getCandidates, getIsLoading } from 'src/models/candidates/selectors'
+import { getCandidates, getError, getIsLoading } from 'src/models/candidates/selectors'
 
 describe('models/candidates/selectors', () => {
     const mockState = {
@@ -9,6 +9,7 @@ describe('models/candidates/selectors', () => {
                 },
             ],
             isLoading: true,
+            error: 'an error occured',
         },
     }
 
@@ -25,6 +26,12 @@ describe('models/candidates/selectors', () => {
     describe('getIsLoading', () => {
         test('should return correct data from store', () => {
             expect(getIsLoading(mockState)).toEqual(true)
+        })
+    })
+
+    describe('getError', () => {
+        test('should return correct data from store', () => {
+            expect(getError(mockState)).toEqual('an error occured')
         })
     })
 })

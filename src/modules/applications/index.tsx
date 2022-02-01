@@ -3,20 +3,21 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useSearchParams } from 'react-router-dom'
 import Grid from 'src/components/grid'
 import { fetchCandidates } from 'src/models/candidates/actions'
-import { getCandidates, getIsLoading } from 'src/models/candidates/selectors'
+import { getCandidates, getError, getIsLoading } from 'src/models/candidates/selectors'
 import { getColumns } from './utils'
 
 export default function Applications(): React.ReactElement {
     const dispatch = useDispatch()
     const candidates = useSelector(getCandidates)
     const isLoading = useSelector(getIsLoading)
+    const error = useSelector(getError)
     const [searchParams, setSearchParams] = useSearchParams({
         sort: 'application_date',
     })
 
     useEffect(() => {
         dispatch(fetchCandidates())
-    }, [])
+    }, [dispatch])
 
     const handleSortChange = useCallback(
         (sort) => {
@@ -42,6 +43,10 @@ export default function Applications(): React.ReactElement {
         [searchParams],
     )
 
+    const handleGridRefresh = useCallback(() => {
+        dispatch(fetchCandidates())
+    }, [dispatch])
+
     const columns = getColumns()
 
     return (
@@ -49,12 +54,14 @@ export default function Applications(): React.ReactElement {
             <Grid
                 columnDef={columns}
                 data={candidates}
+                error={error}
                 isLoading={isLoading}
                 title="Applications"
                 sortBy={searchParams.get('sort')}
                 filterBy={searchParams.get('filter')}
                 onSortChange={handleSortChange}
                 onFilterChange={handleFilterChange}
+                onGridRefresh={handleGridRefresh}
             />
         </>
     )
