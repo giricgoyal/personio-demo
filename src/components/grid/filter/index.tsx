@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react'
 import ComboBox from 'src/components/combo-input'
+import Icon from 'src/components/icon'
 import Select from 'src/components/select'
+import { getFilterBy } from '../utils'
 
 export type FilterOption = {
     label: string
@@ -8,7 +10,7 @@ export type FilterOption = {
     filterValues: Array<string | number>
 }
 
-export type FilterBy = string | null
+export type FilterBy = string | null | undefined
 
 type Props = {
     className?: string
@@ -20,23 +22,22 @@ type Props = {
 export default function Filter(props: Props): ReactElement {
     const { filterOptions, filterBy, onChange, className } = props
 
-    const filterKey = filterBy?.split(':')[0]
-    const filterValue = filterBy?.split(':')[1]
+    const { filterKey, filterValue } = getFilterBy(filterBy)
     const dataList = filterOptions.find(({ value }) => value === filterKey)?.filterValues
 
-    const getFilterBy = (key = '', value = '') => (key ? `${key}:${value}` : '')
+    const getFilterString = (key = '', value = '') => (key ? `${key}:${value}` : '')
 
     const handleFilterChange = (key: string) => {
-        onChange(getFilterBy(key))
+        onChange(getFilterString(key))
     }
 
     const handleFilterValueChange = (value: string) => {
-        onChange(getFilterBy(filterKey, value))
+        onChange(getFilterString(filterKey, value))
     }
 
     return (
         <div className={className}>
-            <i className="fas fa-filter"></i>
+            <Icon icon="filter" />
             <Select
                 data-testid="filterby-select"
                 options={filterOptions}

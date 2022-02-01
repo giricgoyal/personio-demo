@@ -10,6 +10,7 @@ describe('components/grid', () => {
             propBinding: 'name',
             filter: true,
             sort: true,
+            type: 'string',
         },
     ]
 

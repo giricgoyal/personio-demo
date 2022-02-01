@@ -2,20 +2,58 @@
 
 exports[`components/combo-box On value change should render and match snapshot 1`] = `
 <div>
-  <input
+  <label
     class="combo-box"
-    data-testid="input"
-    list="combo-box"
-    value=""
-  />
+  >
+    <input
+      data-testid="input"
+      list="combo-box"
+      value=""
+    />
+  </label>
   <datalist
     id="combo-box"
   >
     <option
+      value="Jane Austin"
+    />
+    <option
       value="John Doe"
     />
     <option
+      value="Mark Roger"
+    />
+  </datalist>
+</div>
+`;
+
+exports[`components/combo-box input clear event should render and match snapshot 1`] = `
+<div>
+  <label
+    class="combo-box"
+  >
+    <input
+      data-testid="input"
+      list="combo-box"
+      value="test"
+    />
+    <button
+      class="button button--tertiary"
+      data-testid="combobox-value-clear"
+    >
+      <i
+        class="fas fa-times "
+      />
+    </button>
+  </label>
+  <datalist
+    id="combo-box"
+  >
+    <option
       value="Jane Austin"
+    />
+    <option
+      value="John Doe"
     />
     <option
       value="Mark Roger"
@@ -26,20 +64,23 @@ exports[`components/combo-box On value change should render and match snapshot 1
 
 exports[`components/combo-box should render and match snapshot 1`] = `
 <div>
-  <input
+  <label
     class="combo-box"
-    data-testid="input"
-    list="combo-box"
-    value=""
-  />
+  >
+    <input
+      data-testid="input"
+      list="combo-box"
+      value=""
+    />
+  </label>
   <datalist
     id="combo-box"
   >
     <option
-      value="John Doe"
+      value="Jane Austin"
     />
     <option
-      value="Jane Austin"
+      value="John Doe"
     />
     <option
       value="Mark Roger"

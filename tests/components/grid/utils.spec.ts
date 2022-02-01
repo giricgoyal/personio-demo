@@ -1,4 +1,4 @@
-import { getData, getFilterOptions, getSortableColumns } from 'src/components/grid/utils'
+import { getData, getFilterBy, getFilterOptions, getSortableColumns, getSortParams } from 'src/components/grid/utils'
 
 describe('components/grid/utils', () => {
     describe('getSortableColumns()', () => {
@@ -7,10 +7,12 @@ describe('components/grid/utils', () => {
                 title: 'col 1',
                 propBinding: 'col1',
                 sort: true,
+                type: 'string',
             },
             {
                 title: 'col 2',
                 propBinding: 'col2',
+                type: 'number',
             },
         ]
         test('should return sortable columns', () => {
@@ -58,16 +60,36 @@ describe('components/grid/utils', () => {
         })
     })
 
+    describe('getSortParams()', () => {
+        test('should return correct data', () => {
+            expect(getSortParams('-column1')).toStrictEqual({
+                sortByCol: 'column1',
+                isDescending: true,
+            })
+        })
+    })
+
+    describe('getFilterBy()', () => {
+        test('should return correct data', () => {
+            expect(getFilterBy('key:value')).toStrictEqual({
+                filterKey: 'key',
+                filterValue: 'value',
+            })
+        })
+    })
+
     describe('getFilterOptions()', () => {
         const colDefs = [
             {
                 title: 'Name',
                 propBinding: 'name',
                 filter: true,
+                type: 'string',
             },
             {
                 title: 'Application Date',
                 propBinding: 'application_date',
+                type: 'date',
             },
         ]
 

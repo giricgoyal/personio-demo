@@ -12,7 +12,8 @@ export default function Applications(): React.ReactElement {
     const isLoading = useSelector(getIsLoading)
     const error = useSelector(getError)
     const [searchParams, setSearchParams] = useSearchParams({
-        sort: 'application_date',
+        sort: '-application_date',
+        filter: 'name:',
     })
 
     useEffect(() => {

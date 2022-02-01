@@ -13,6 +13,7 @@ export type Column = {
     propBinding: string
     sort?: boolean
     filter?: boolean
+    type: string
 }
 
 export type Row = {
@@ -56,7 +57,7 @@ export default function Grid(props: Props): ReactElement {
             <GridLoader isLoading={isLoading} />
             {!error && !isLoading && (
                 <GridTable columns={columnDef.length}>
-                    <GridTableHeader columnDef={columnDef} />
+                    <GridTableHeader columnDef={columnDef} sortBy={sortBy} filterBy={filterBy} />
                     <GridTableBody columnDef={columnDef} data={sortedFilteredData} />
                 </GridTable>
             )}

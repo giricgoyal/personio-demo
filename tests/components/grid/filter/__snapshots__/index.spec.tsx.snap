@@ -4,7 +4,7 @@ exports[`components/grid/filter When filterBy is provided should render and matc
 <div>
   <div>
     <i
-      class="fas fa-filter"
+      class="fas fa-filter "
     />
     <label
       class="select"
@@ -28,13 +28,27 @@ exports[`components/grid/filter When filterBy is provided should render and matc
           col2
         </option>
       </select>
+      <i
+        class="fas fa-caret-down "
+      />
     </label>
-    <input
+    <label
       class="combo-box"
-      data-testid="filter-value-input"
-      list="filter-value-input"
-      value="val2"
-    />
+    >
+      <input
+        data-testid="filter-value-input"
+        list="filter-value-input"
+        value="val2"
+      />
+      <button
+        class="button button--tertiary"
+        data-testid="combobox-value-clear"
+      >
+        <i
+          class="fas fa-times "
+        />
+      </button>
+    </label>
     <datalist
       id="filter-value-input"
     >
@@ -56,7 +70,7 @@ exports[`components/grid/filter should render and match snapshot 1`] = `
 <div>
   <div>
     <i
-      class="fas fa-filter"
+      class="fas fa-filter "
     />
     <label
       class="select"
@@ -79,13 +93,19 @@ exports[`components/grid/filter should render and match snapshot 1`] = `
           col2
         </option>
       </select>
+      <i
+        class="fas fa-caret-down "
+      />
     </label>
-    <input
+    <label
       class="combo-box"
-      data-testid="filter-value-input"
-      list="filter-value-input"
-      value=""
-    />
+    >
+      <input
+        data-testid="filter-value-input"
+        list="filter-value-input"
+        value=""
+      />
+    </label>
   </div>
 </div>
 `;

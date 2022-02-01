@@ -1,10 +1,23 @@
 .select {
+    position: relative;
+    display: flex;
+    align-items: center;
+
     &__label {
         margin-right: 5px;
     }
 
     &__element {
         border: 0px;
+        cursor: pointer;
+        background-color: white;
+        -webkit-appearance: none;
+        padding-right: 30px;
+    }
+
+    i {
+        position: absolute;
+        right: 10px;
         cursor: pointer;
     }
 }

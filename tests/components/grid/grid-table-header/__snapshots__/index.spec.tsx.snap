@@ -5,7 +5,11 @@ exports[`components/grid/grid-table-header should render and match snapshot 1`] 
   <div
     class="grid__table__cell grid__table__cell--header"
   >
-    Name
+    <div
+      class="grid__table__cell--header__label"
+    >
+      Name
+    </div>
   </div>
 </div>
 `;

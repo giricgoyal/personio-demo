@@ -15,17 +15,20 @@ exports[`components/select should render and match snapshot 1`] = `
       data-testid="select-input"
     >
       <option
-        value="option1"
-      >
-        option 1
-      </option>
-      <option
         selected=""
         value="option2"
       >
         Option 2
       </option>
+      <option
+        value="option1"
+      >
+        option 1
+      </option>
     </select>
+    <i
+      class="fas fa-caret-down "
+    />
   </label>
 </div>
 `;

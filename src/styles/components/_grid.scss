@@ -72,9 +72,20 @@
         &__cell {
             padding: 10px;
             border-bottom: 1px solid $grey-300;
+            gap: 5px;
 
             &:not(:nth-child(8n)) {
                 border-right: 1px solid $grey-300;
+            }
+
+            &__label {
+                &--number {
+                    text-align: right;
+                }
+            }
+
+            &--number {
+                text-align: right;
             }
 
             &--header {
@@ -82,9 +93,15 @@
                 position: sticky;
                 top: 0px;
                 background-color: $blue-200;
+                display: flex;
+                align-items: center;
 
                 &:not(:nth-child(8)) {
                     border-right: 1px solid white;
+                }
+
+                &__label {
+                    flex: 1;
                 }
             }
         }

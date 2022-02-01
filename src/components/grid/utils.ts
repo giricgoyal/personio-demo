@@ -1,7 +1,7 @@
 import { uniq } from 'lodash'
 import { Column, Row } from '.'
-import { FilterOption } from './filter'
-import { SortOption } from './sort'
+import { FilterBy, FilterOption } from './filter'
+import { SortBy, SortOption } from './sort'
 
 export const getSortableColumns = (columnDef: Array<Column>): Array<SortOption> =>
     columnDef
@@ -11,32 +11,39 @@ export const getSortableColumns = (columnDef: Array<Column>): Array<SortOption> 
             value: col.propBinding,
         }))
 
-const getSortParams = (
-    sortBy: string,
+export const getSortParams = (
+    sortBy: SortBy,
 ): {
-    col: string
+    sortByCol: string
     isDescending: boolean
 } => {
     return {
-        col: sortBy.replace('-', ''),
-        isDescending: sortBy.includes('-'),
+        sortByCol: (sortBy || '').replace('-', ''),
+        isDescending: (sortBy || '').includes('-'),
     }
 }
 
-export const getData = (data: Array<Row>, sortBy?: string | null, filterBy?: string | null): Array<Row> => {
-    const filterByKey = filterBy?.split(':')[0]
-    const filterByValue = filterBy?.split(':')[1]
+export const getFilterBy = (filterBy: FilterBy = ''): { filterKey: string; filterValue: string } => {
+    const [filterKey, filterValue] = filterBy?.split(':') ?? ['', '']
+    return {
+        filterKey,
+        filterValue,
+    }
+}
+
+export const getData = (data: Array<Row>, sortBy?: string | null, filterBy?: FilterBy): Array<Row> => {
+    const { filterKey, filterValue } = getFilterBy(filterBy)
     const filterFn =
-        filterByKey && filterByValue
-            ? (datum) => datum[filterByKey].toLowerCase().includes(filterByValue.toLowerCase())
+        filterKey && filterValue
+            ? (datum) => datum[filterKey].toLowerCase().includes(filterValue.toLowerCase())
             : (d) => d
     const filteredData = data.filter(filterFn)
 
     if (sortBy) {
-        const { col, isDescending } = getSortParams(sortBy)
+        const { sortByCol, isDescending } = getSortParams(sortBy)
 
         filteredData.sort((a, b) => {
-            if (a[col] > b[col]) {
+            if (a[sortByCol] > b[sortByCol]) {
                 return isDescending ? -1 : 1
             } else {
                 return isDescending ? 1 : -1

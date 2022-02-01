@@ -33,7 +33,7 @@ exports[`modules/applications When api error occurs should render and match snap
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -46,6 +46,7 @@ exports[`modules/applications When api error occurs should render and match snap
               data-testid="filterby-select"
             >
               <option
+                selected=""
                 value="name"
               >
                 Name
@@ -61,19 +62,26 @@ exports[`modules/applications When api error occurs should render and match snap
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
-          <input
+          <label
             class="combo-box"
-            data-testid="filter-value-input"
-            list="filter-value-input"
-            value=""
-          />
+          >
+            <input
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+            
+          </label>
         </div>
         <div
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -102,13 +110,16 @@ exports[`modules/applications When api error occurs should render and match snap
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-down "
             />
           </button>
         </div>
@@ -165,7 +176,7 @@ exports[`modules/applications When component is rendered first should render and
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -178,6 +189,7 @@ exports[`modules/applications When component is rendered first should render and
               data-testid="filterby-select"
             >
               <option
+                selected=""
                 value="name"
               >
                 Name
@@ -193,19 +205,26 @@ exports[`modules/applications When component is rendered first should render and
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
-          <input
+          <label
             class="combo-box"
-            data-testid="filter-value-input"
-            list="filter-value-input"
-            value=""
-          />
+          >
+            <input
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+            
+          </label>
         </div>
         <div
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -234,13 +253,16 @@ exports[`modules/applications When component is rendered first should render and
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-down "
             />
           </button>
         </div>
@@ -252,42 +274,85 @@ exports[`modules/applications When component is rendered first should render and
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Id
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Id
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Email
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Birth Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Application Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        <i
+          class="fas fa-arrow-down "
+        />
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Position Applied
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Status
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Years of experience
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Years of experience
+        </div>
+        
       </div>
     </div>
   </div>
@@ -327,7 +392,7 @@ exports[`modules/applications When data is loading should render and match snaps
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -340,6 +405,7 @@ exports[`modules/applications When data is loading should render and match snaps
               data-testid="filterby-select"
             >
               <option
+                selected=""
                 value="name"
               >
                 Name
@@ -355,19 +421,26 @@ exports[`modules/applications When data is loading should render and match snaps
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
-          <input
+          <label
             class="combo-box"
-            data-testid="filter-value-input"
-            list="filter-value-input"
-            value=""
-          />
+          >
+            <input
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+            
+          </label>
         </div>
         <div
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -396,13 +469,16 @@ exports[`modules/applications When data is loading should render and match snaps
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-down "
             />
           </button>
         </div>
@@ -412,7 +488,7 @@ exports[`modules/applications When data is loading should render and match snaps
       class="grid__loading"
     >
       <i
-        class="fas fa-spinner fa-spin fa-2x"
+        class="fas fa-spinner fa-2x fa-spin"
       />
     </div>
   </div>
@@ -452,7 +528,7 @@ exports[`modules/applications When data is present in store When sort is changed
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -465,6 +541,7 @@ exports[`modules/applications When data is present in store When sort is changed
               data-testid="filterby-select"
             >
               <option
+                selected=""
                 value="name"
               >
                 Name
@@ -480,19 +557,36 @@ exports[`modules/applications When data is present in store When sort is changed
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
-          <input
+          <label
             class="combo-box"
-            data-testid="filter-value-input"
-            list="filter-value-input"
-            value=""
-          />
+          >
+            <input
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+            
+          </label>
+          <datalist
+            id="filter-value-input"
+          >
+            <option
+              value="Jane Smith"
+            />
+            <option
+              value="John Doe"
+            />
+          </datalist>
         </div>
         <div
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -521,13 +615,16 @@ exports[`modules/applications When data is present in store When sort is changed
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-down "
             />
           </button>
         </div>
@@ -539,75 +636,88 @@ exports[`modules/applications When data is present in store When sort is changed
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Id
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Id
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Email
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Birth Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Application Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Position Applied
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        <i
+          class="fas fa-arrow-down "
+        />
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Status
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Years of experience
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Years of experience
+        </div>
+        
       </div>
       <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      >
-        Jane Smith
-      </div>
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      >
-        2022-10-10
-      </div>
-      <div
-        class="grid__table__cell"
-      >
-        QA Engineer
-      </div>
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
         class="grid__table__cell"
@@ -634,7 +744,37 @@ exports[`modules/applications When data is present in store When sort is changed
         class="grid__table__cell"
       />
       <div
+        class="grid__table__cell grid__table__cell--number"
+      />
+      <div
+        class="grid__table__cell grid__table__cell--number"
+      />
+      <div
         class="grid__table__cell"
+      >
+        Jane Smith
+      </div>
+      <div
+        class="grid__table__cell"
+      />
+      <div
+        class="grid__table__cell"
+      />
+      <div
+        class="grid__table__cell"
+      >
+        2022-10-10
+      </div>
+      <div
+        class="grid__table__cell"
+      >
+        QA Engineer
+      </div>
+      <div
+        class="grid__table__cell"
+      />
+      <div
+        class="grid__table__cell grid__table__cell--number"
       />
     </div>
   </div>
@@ -674,7 +814,7 @@ exports[`modules/applications When data is present in store should render and ma
           class="grid__header__right__filter"
         >
           <i
-            class="fas fa-filter"
+            class="fas fa-filter "
           />
           <label
             class="select"
@@ -687,6 +827,7 @@ exports[`modules/applications When data is present in store should render and ma
               data-testid="filterby-select"
             >
               <option
+                selected=""
                 value="name"
               >
                 Name
@@ -702,19 +843,36 @@ exports[`modules/applications When data is present in store should render and ma
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
-          <input
+          <label
             class="combo-box"
-            data-testid="filter-value-input"
-            list="filter-value-input"
-            value=""
-          />
+          >
+            <input
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+            
+          </label>
+          <datalist
+            id="filter-value-input"
+          >
+            <option
+              value="Jane Smith"
+            />
+            <option
+              value="John Doe"
+            />
+          </datalist>
         </div>
         <div
           class="grid__header__right__sort"
         >
           <i
-            class="fas fa-sort"
+            class="fas fa-sort "
           />
           <label
             class="select"
@@ -743,13 +901,16 @@ exports[`modules/applications When data is present in store should render and ma
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
             data-testid="sort-order-button"
           >
             <i
-              class="fas fa-arrow-up"
+              class="fas fa-arrow-down "
             />
           </button>
         </div>
@@ -761,75 +922,88 @@ exports[`modules/applications When data is present in store should render and ma
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Id
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Id
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Name
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Email
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Birth Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Application Date
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        <i
+          class="fas fa-arrow-down "
+        />
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Position Applied
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Status
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
       </div>
       <div
         class="grid__table__cell grid__table__cell--header"
       >
-        Years of experience
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Years of experience
+        </div>
+        
       </div>
       <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      >
-        John Doe
-      </div>
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      >
-        2019-10-10
-      </div>
-      <div
-        class="grid__table__cell"
-      >
-        writer
-      </div>
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
-      />
-      <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
         class="grid__table__cell"
@@ -856,7 +1030,37 @@ exports[`modules/applications When data is present in store should render and ma
         class="grid__table__cell"
       />
       <div
+        class="grid__table__cell grid__table__cell--number"
+      />
+      <div
+        class="grid__table__cell grid__table__cell--number"
+      />
+      <div
         class="grid__table__cell"
+      >
+        John Doe
+      </div>
+      <div
+        class="grid__table__cell"
+      />
+      <div
+        class="grid__table__cell"
+      />
+      <div
+        class="grid__table__cell"
+      >
+        2019-10-10
+      </div>
+      <div
+        class="grid__table__cell"
+      >
+        writer
+      </div>
+      <div
+        class="grid__table__cell"
+      />
+      <div
+        class="grid__table__cell grid__table__cell--number"
       />
     </div>
   </div>

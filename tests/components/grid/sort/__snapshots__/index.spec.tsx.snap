@@ -4,7 +4,7 @@ exports[`components/grid/sort should render correctly and match snapshot 1`] = `
 <div>
   <div>
     <i
-      class="fas fa-sort"
+      class="fas fa-sort "
     />
     <label
       class="select"
@@ -28,13 +28,16 @@ exports[`components/grid/sort should render correctly and match snapshot 1`] = `
           col2
         </option>
       </select>
+      <i
+        class="fas fa-caret-down "
+      />
     </label>
     <button
       class="button button--tertiary"
       data-testid="sort-order-button"
     >
       <i
-        class="fas fa-arrow-down"
+        class="fas fa-arrow-down "
       />
     </button>
   </div>
