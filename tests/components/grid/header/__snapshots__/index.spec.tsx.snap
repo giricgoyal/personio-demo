@@ -51,6 +51,9 @@ Object {
                   col1
                 </option>
               </select>
+              <i
+                class="fas fa-caret-down "
+              />
             </label>
             <label
               class="combo-box"
@@ -85,6 +88,9 @@ Object {
                   col1
                 </option>
               </select>
+              <i
+                class="fas fa-caret-down "
+              />
             </label>
             <button
               class="button button--tertiary"
@@ -146,6 +152,9 @@ Object {
                 col1
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -180,6 +189,9 @@ Object {
                 col1
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"

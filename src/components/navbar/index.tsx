@@ -5,7 +5,7 @@ export default function Navbar(): ReactElement {
     return (
         <div className="navbar">
             <div>
-                <img src="./assets/images/logo.png" />
+                <img className="navbar__logo" src="./assets/images/logo.png" />
             </div>
             <div>
                 <Icon icon="profile" size="large" />

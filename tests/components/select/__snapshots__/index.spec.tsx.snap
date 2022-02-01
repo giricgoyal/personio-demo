@@ -26,6 +26,9 @@ exports[`components/select should render and match snapshot 1`] = `
         option 1
       </option>
     </select>
+    <i
+      class="fas fa-caret-down "
+    />
   </label>
 </div>
 `;

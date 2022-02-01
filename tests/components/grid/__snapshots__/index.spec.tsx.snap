@@ -51,6 +51,9 @@ exports[`components/grid When loading should render and match snapshot 1`] = `
                 Name
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -85,6 +88,9 @@ exports[`components/grid When loading should render and match snapshot 1`] = `
                 Name
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
@@ -159,6 +165,9 @@ exports[`components/grid When not loading When data is present should render and
                 Name
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -193,6 +202,9 @@ exports[`components/grid When not loading When data is present should render and
                 Name
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
@@ -291,6 +303,9 @@ exports[`components/grid When not loading When error occured should render and m
                 Name
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -325,6 +340,9 @@ exports[`components/grid When not loading When error occured should render and m
                 Name
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"

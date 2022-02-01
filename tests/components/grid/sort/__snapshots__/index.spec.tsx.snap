@@ -28,6 +28,9 @@ exports[`components/grid/sort should render correctly and match snapshot 1`] = `
           col2
         </option>
       </select>
+      <i
+        class="fas fa-caret-down "
+      />
     </label>
     <button
       class="button button--tertiary"

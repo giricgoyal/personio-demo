@@ -62,6 +62,9 @@ exports[`modules/applications When api error occurs should render and match snap
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -107,6 +110,9 @@ exports[`modules/applications When api error occurs should render and match snap
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
@@ -199,6 +205,9 @@ exports[`modules/applications When component is rendered first should render and
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -244,6 +253,9 @@ exports[`modules/applications When component is rendered first should render and
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
@@ -409,6 +421,9 @@ exports[`modules/applications When data is loading should render and match snaps
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -454,6 +469,9 @@ exports[`modules/applications When data is loading should render and match snaps
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
@@ -539,6 +557,9 @@ exports[`modules/applications When data is present in store When sort is changed
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -594,6 +615,9 @@ exports[`modules/applications When data is present in store When sort is changed
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"
@@ -819,6 +843,9 @@ exports[`modules/applications When data is present in store should render and ma
                 Status
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <label
             class="combo-box"
@@ -874,6 +901,9 @@ exports[`modules/applications When data is present in store should render and ma
                 Years of experience
               </option>
             </select>
+            <i
+              class="fas fa-caret-down "
+            />
           </label>
           <button
             class="button button--tertiary"

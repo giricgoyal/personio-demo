@@ -1,4 +1,5 @@
 import React, { ReactElement, useCallback } from 'react'
+import Icon from '../icon'
 
 type Option = {
     label: string
@@ -40,6 +41,7 @@ export default function Select(props: Props): ReactElement {
                         </option>
                     ))}
             </select>
+            <Icon icon="caret-down" />
         </label>
     )
 }

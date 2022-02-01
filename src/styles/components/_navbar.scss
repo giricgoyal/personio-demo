@@ -6,4 +6,8 @@
     box-shadow: 0 2px 10px $grey-300;
     background-color: $white;
     justify-content: space-between;
+
+    &__logo {
+        height: 50px;
+    }
 }

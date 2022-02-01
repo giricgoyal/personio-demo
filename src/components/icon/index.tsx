@@ -8,6 +8,7 @@ type Props = {
 }
 
 const ICON_MAPPER = {
+    'caret-down': 'fas fa-caret-down',
     cross: 'fas fa-times',
     filter: 'fas fa-filter',
     sort: 'fas fa-sort',

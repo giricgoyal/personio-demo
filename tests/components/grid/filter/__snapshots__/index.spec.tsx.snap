@@ -28,6 +28,9 @@ exports[`components/grid/filter When filterBy is provided should render and matc
           col2
         </option>
       </select>
+      <i
+        class="fas fa-caret-down "
+      />
     </label>
     <label
       class="combo-box"
@@ -90,6 +93,9 @@ exports[`components/grid/filter should render and match snapshot 1`] = `
           col2
         </option>
       </select>
+      <i
+        class="fas fa-caret-down "
+      />
     </label>
     <label
       class="combo-box"
