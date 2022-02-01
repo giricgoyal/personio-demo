@@ -4,12 +4,12 @@ import ComboBox from 'src/components/combo-input'
 import { render } from 'tests/test-utils'
 
 describe('components/combo-box', () => {
-    let container, getByTestId, onChangeHandler
+    let container, getByTestId, onChangeHandler, rerender
     const dataList = ['John Doe', 'Jane Austin', 'Mark Roger']
 
     beforeEach(() => {
         onChangeHandler = jest.fn()
-        ;({ container, getByTestId } = render(
+        ;({ container, getByTestId, rerender } = render(
             <ComboBox id="combo-box" onChange={onChangeHandler} dataList={dataList} />,
         ))
     })
@@ -33,6 +33,21 @@ describe('components/combo-box', () => {
 
         test('should call the onChangeHandler', () => {
             expect(onChangeHandler).toHaveBeenCalledWith('john')
+        })
+    })
+
+    describe('input clear event', () => {
+        beforeEach(() => {
+            rerender(<ComboBox id="combo-box" value="test" onChange={onChangeHandler} dataList={dataList} />)
+            fireEvent.click(getByTestId('combobox-value-clear'))
+        })
+
+        test('should render and match snapshot', () => {
+            expect(container).toMatchSnapshot()
+        })
+
+        test('should call onChange handler with ""', () => {
+            expect(onChangeHandler).toHaveBeenCalledWith('')
         })
     })
 })

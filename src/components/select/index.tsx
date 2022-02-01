@@ -32,11 +32,13 @@ export default function Select(props: Props): ReactElement {
                 onChange={handleOnChange}
                 defaultValue={selected}
             >
-                {options.map((option) => (
-                    <option value={option.value} key={option.value}>
-                        {option.label}
-                    </option>
-                ))}
+                {options
+                    .sort((a, b) => (a.label > b.label ? 1 : -1))
+                    .map((option) => (
+                        <option value={option.value} key={option.value}>
+                            {option.label}
+                        </option>
+                    ))}
             </select>
         </label>
     )

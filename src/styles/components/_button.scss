@@ -1,6 +1,9 @@
 .button {
     cursor: pointer;
     min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--tertiary {
         background-color: $white;
