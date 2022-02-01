@@ -1,8 +1,12 @@
 .app {
     overflow: none;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 
     &__page {
         overflow: auto;
         padding: 16px 10px;
+        flex: 1;
     }
 }

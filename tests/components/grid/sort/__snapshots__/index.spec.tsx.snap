@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid/sort should render correctly and match snapshot 1`] = `
+<div>
+  <div>
+    <i
+      class="fas fa-sort"
+    />
+    <label
+      class="select"
+    >
+      <span
+        class="select__label"
+      />
+      <select
+        class="select__element"
+        data-testid="select"
+      >
+        <option
+          selected=""
+          value="col1"
+        >
+          col1
+        </option>
+        <option
+          value="col2"
+        >
+          col2
+        </option>
+      </select>
+    </label>
+    <button
+      class="button button--tertiary"
+      data-testid="sort-order-button"
+    >
+      <i
+        class="fas fa-arrow-down"
+      />
+    </button>
+  </div>
+</div>
+`;

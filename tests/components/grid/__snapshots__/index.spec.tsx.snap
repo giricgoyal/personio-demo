@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid When loading should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="grid__header"
+    >
+      <div
+        class="grid__header__left"
+      >
+        <div
+          class="grid__header__left__title"
+        >
+          sample grid
+        </div>
+        <div
+          class="grid__header__left__data-count"
+        >
+          (
+          0
+          /
+          0
+          )
+        </div>
+      </div>
+      <div
+        class="grid__header__right"
+      >
+        <div>
+          <i
+            class="fas fa-filter"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
+            >
+              <option
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="select"
+            >
+              <option
+                selected=""
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </label>
+          <button
+            class="button button--tertiary"
+            data-testid="sort-order-button"
+          >
+            <i
+              class="fas fa-arrow-up"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid__loading"
+    >
+      <i
+        class="fas fa-spinner fa-spin fa-2x"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/grid When not loading When data is present should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="grid__header"
+    >
+      <div
+        class="grid__header__left"
+      >
+        <div
+          class="grid__header__left__title"
+        >
+          sample grid
+        </div>
+        <div
+          class="grid__header__left__data-count"
+        >
+          (
+          3
+          /
+          3
+          )
+        </div>
+      </div>
+      <div
+        class="grid__header__right"
+      >
+        <div>
+          <i
+            class="fas fa-filter"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
+            >
+              <option
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="select"
+            >
+              <option
+                selected=""
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </label>
+          <button
+            class="button button--tertiary"
+            data-testid="sort-order-button"
+          >
+            <i
+              class="fas fa-arrow-up"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid__table grid__table--grid-1"
+    >
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        Name
+      </div>
+      <div
+        class="grid__table__cell"
+      >
+        Jane
+      </div>
+      <div
+        class="grid__table__cell"
+      >
+        John
+      </div>
+      <div
+        class="grid__table__cell"
+      >
+        Ray
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/grid When not loading When error occured should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="grid__header"
+    >
+      <div
+        class="grid__header__left"
+      >
+        <div
+          class="grid__header__left__title"
+        >
+          sample grid
+        </div>
+        <div
+          class="grid__header__left__data-count"
+        >
+          (
+          0
+          /
+          0
+          )
+        </div>
+      </div>
+      <div
+        class="grid__header__right"
+      >
+        <div>
+          <i
+            class="fas fa-filter"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
+            >
+              <option
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="select"
+            >
+              <option
+                selected=""
+                value="name"
+              >
+                Name
+              </option>
+            </select>
+          </label>
+          <button
+            class="button button--tertiary"
+            data-testid="sort-order-button"
+          >
+            <i
+              class="fas fa-arrow-up"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid__error"
+    >
+      an error occured
+      <div>
+        <button
+          class="button button--tertiary"
+          data-testid="refresh-grid-button"
+        >
+          <i
+            class="fas fa-sync fa-2x"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

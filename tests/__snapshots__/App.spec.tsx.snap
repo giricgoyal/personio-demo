@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should render and match snapshot 1`] = `
-<div
-  className="app"
->
+<React.Fragment>
   <Navbar />
   <div
     className="app__page"
   >
     <Router />
   </div>
-</div>
+</React.Fragment>
 `;

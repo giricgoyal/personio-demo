@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/combo-box On value change should render and match snapshot 1`] = `
+<div>
+  <input
+    class="combo-box"
+    data-testid="input"
+    list="combo-box"
+    value=""
+  />
+  <datalist
+    id="combo-box"
+  >
+    <option
+      value="John Doe"
+    />
+    <option
+      value="Jane Austin"
+    />
+    <option
+      value="Mark Roger"
+    />
+  </datalist>
+</div>
+`;
+
+exports[`components/combo-box should render and match snapshot 1`] = `
+<div>
+  <input
+    class="combo-box"
+    data-testid="input"
+    list="combo-box"
+    value=""
+  />
+  <datalist
+    id="combo-box"
+  >
+    <option
+      value="John Doe"
+    />
+    <option
+      value="Jane Austin"
+    />
+    <option
+      value="Mark Roger"
+    />
+  </datalist>
+</div>
+`;
