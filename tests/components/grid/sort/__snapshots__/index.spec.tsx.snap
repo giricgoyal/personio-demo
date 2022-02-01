@@ -3,14 +3,15 @@
 exports[`components/grid/sort should render correctly and match snapshot 1`] = `
 <div>
   <div>
+    <i
+      class="fas fa-sort"
+    />
     <label
       class="select"
     >
       <span
         class="select__label"
-      >
-        Sort by:
-      </span>
+      />
       <select
         class="select__element"
         data-testid="select"

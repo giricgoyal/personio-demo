@@ -4,12 +4,13 @@ type Props = {
     id: string
     onChange: (value: string) => void
     placeholder?: string
-    dataList?: Array<string>
+    dataList?: Array<string | number>
     'data-testid'?: string
+    value?: string
 }
 
 export default function ComboBox(props: Props): ReactElement {
-    const { dataList = [], placeholder, id, onChange } = props
+    const { dataList = [], placeholder, id, onChange, value } = props
 
     const handleInputOnChange = useCallback(
         (event) => {
@@ -25,9 +26,10 @@ export default function ComboBox(props: Props): ReactElement {
                 className="combo-box"
                 placeholder={placeholder}
                 list={id}
+                value={value}
                 onChange={handleInputOnChange}
             />
-            {dataList.length && (
+            {dataList.length > 0 && (
                 <datalist id={id}>
                     {dataList.map((option) => (
                         <option value={option} />

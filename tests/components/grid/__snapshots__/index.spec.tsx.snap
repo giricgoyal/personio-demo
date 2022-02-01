@@ -33,18 +33,54 @@ Object {
             class="grid__header__right"
           >
             <div>
+              <i
+                class="fas fa-filter"
+              />
               <label
                 class="select"
               >
                 <span
                   class="select__label"
+                />
+                <select
+                  class="select__element"
+                  data-testid="filterby-select"
                 >
-                  Sort by:
-                </span>
+                  <option
+                    value="name"
+                  >
+                    Name
+                  </option>
+                </select>
+              </label>
+              <input
+                class="combo-box"
+                data-testid="filter-value-input"
+                list="filter-value-input"
+                value=""
+              />
+            </div>
+            <div>
+              <i
+                class="fas fa-sort"
+              />
+              <label
+                class="select"
+              >
+                <span
+                  class="select__label"
+                />
                 <select
                   class="select__element"
                   data-testid="select"
-                />
+                >
+                  <option
+                    selected=""
+                    value="name"
+                  >
+                    Name
+                  </option>
+                </select>
               </label>
               <button
                 class="button button--tertiary"
@@ -61,7 +97,9 @@ Object {
           class="grid__loading"
         >
           <div>
-            loading
+            <i
+              class="fas fa-spinner fa-spin fa-2x"
+            />
           </div>
         </div>
       </div>
@@ -96,18 +134,54 @@ Object {
           class="grid__header__right"
         >
           <div>
+            <i
+              class="fas fa-filter"
+            />
             <label
               class="select"
             >
               <span
                 class="select__label"
+              />
+              <select
+                class="select__element"
+                data-testid="filterby-select"
               >
-                Sort by:
-              </span>
+                <option
+                  value="name"
+                >
+                  Name
+                </option>
+              </select>
+            </label>
+            <input
+              class="combo-box"
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+          </div>
+          <div>
+            <i
+              class="fas fa-sort"
+            />
+            <label
+              class="select"
+            >
+              <span
+                class="select__label"
+              />
               <select
                 class="select__element"
                 data-testid="select"
-              />
+              >
+                <option
+                  selected=""
+                  value="name"
+                >
+                  Name
+                </option>
+              </select>
             </label>
             <button
               class="button button--tertiary"
@@ -124,7 +198,9 @@ Object {
         class="grid__loading"
       >
         <div>
-          loading
+          <i
+            class="fas fa-spinner fa-spin fa-2x"
+          />
         </div>
       </div>
     </div>
@@ -216,18 +292,54 @@ Object {
             class="grid__header__right"
           >
             <div>
+              <i
+                class="fas fa-filter"
+              />
               <label
                 class="select"
               >
                 <span
                   class="select__label"
+                />
+                <select
+                  class="select__element"
+                  data-testid="filterby-select"
                 >
-                  Sort by:
-                </span>
+                  <option
+                    value="name"
+                  >
+                    Name
+                  </option>
+                </select>
+              </label>
+              <input
+                class="combo-box"
+                data-testid="filter-value-input"
+                list="filter-value-input"
+                value=""
+              />
+            </div>
+            <div>
+              <i
+                class="fas fa-sort"
+              />
+              <label
+                class="select"
+              >
+                <span
+                  class="select__label"
+                />
                 <select
                   class="select__element"
                   data-testid="select"
-                />
+                >
+                  <option
+                    selected=""
+                    value="name"
+                  >
+                    Name
+                  </option>
+                </select>
               </label>
               <button
                 class="button button--tertiary"
@@ -296,18 +408,54 @@ Object {
           class="grid__header__right"
         >
           <div>
+            <i
+              class="fas fa-filter"
+            />
             <label
               class="select"
             >
               <span
                 class="select__label"
+              />
+              <select
+                class="select__element"
+                data-testid="filterby-select"
               >
-                Sort by:
-              </span>
+                <option
+                  value="name"
+                >
+                  Name
+                </option>
+              </select>
+            </label>
+            <input
+              class="combo-box"
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+          </div>
+          <div>
+            <i
+              class="fas fa-sort"
+            />
+            <label
+              class="select"
+            >
+              <span
+                class="select__label"
+              />
               <select
                 class="select__element"
                 data-testid="select"
-              />
+              >
+                <option
+                  selected=""
+                  value="name"
+                >
+                  Name
+                </option>
+              </select>
             </label>
             <button
               class="button button--tertiary"

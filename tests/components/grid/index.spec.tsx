@@ -3,17 +3,20 @@ import React from 'react'
 import Grid from 'src/components/grid'
 
 describe('components/grid', () => {
-    let container, onSortChangeHandler
+    let container, onSortChangeHandler, onFilterChangeHandler
     const columnDef = [
         {
             title: 'Name',
             propBinding: 'name',
+            filter: true,
+            sort: true,
         },
     ]
 
     describe('When loading', () => {
         beforeEach(() => {
             onSortChangeHandler = jest.fn()
+            onFilterChangeHandler = jest.fn()
             container = render(
                 <Grid
                     data={[]}
@@ -21,7 +24,9 @@ describe('components/grid', () => {
                     columnDef={columnDef}
                     title="sample grid"
                     sortBy="name"
+                    filterBy={''}
                     onSortChange={onSortChangeHandler}
+                    onFilterChange={onFilterChangeHandler}
                 />,
             )
         })
@@ -55,7 +60,9 @@ describe('components/grid', () => {
                     columnDef={columnDef}
                     title="sample grid"
                     sortBy="name"
+                    filterBy={''}
                     onSortChange={onSortChangeHandler}
+                    onFilterChange={onFilterChangeHandler}
                 />,
             )
         })

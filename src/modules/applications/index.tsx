@@ -10,15 +10,37 @@ export default function Applications(): React.ReactElement {
     const dispatch = useDispatch()
     const candidates = useSelector(getCandidates)
     const isLoading = useSelector(getIsLoading)
-    const [searchParams, setSearchParams] = useSearchParams()
+    const [searchParams, setSearchParams] = useSearchParams({
+        sort: 'application_date',
+    })
 
     useEffect(() => {
         dispatch(fetchCandidates())
     }, [])
 
-    const handleSortChange = useCallback((sort) => {
-        setSearchParams({ sort })
-    }, [])
+    const handleSortChange = useCallback(
+        (sort) => {
+            const oldSearchParams: { filter?: string } = {}
+            const appliedFilters = searchParams.get('filter')
+            if (appliedFilters) {
+                oldSearchParams.filter = appliedFilters
+            }
+            setSearchParams({ sort, ...oldSearchParams })
+        },
+        [searchParams],
+    )
+
+    const handleFilterChange = useCallback(
+        (filter) => {
+            const oldSearchParams: { sort?: string } = {}
+            const appliedSort = searchParams.get('sort')
+            if (appliedSort) {
+                oldSearchParams.sort = appliedSort
+            }
+            setSearchParams({ filter, ...oldSearchParams })
+        },
+        [searchParams],
+    )
 
     const columns = getColumns()
 
@@ -29,8 +51,10 @@ export default function Applications(): React.ReactElement {
                 data={candidates}
                 isLoading={isLoading}
                 title="Applications"
-                sortBy={searchParams.get('sort') ?? 'application_date'}
+                sortBy={searchParams.get('sort')}
+                filterBy={searchParams.get('filter')}
                 onSortChange={handleSortChange}
+                onFilterChange={handleFilterChange}
             />
         </>
     )

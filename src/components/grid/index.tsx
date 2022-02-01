@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react'
+import { FilterBy } from './filter'
 import GridHeader from './header'
-import { getData, getSortableColumns } from './utils'
+import { getData, getFilterOptions, getSortableColumns } from './utils'
 
 export type Column = {
     title: string
@@ -19,27 +20,35 @@ type Props = {
     isLoading?: boolean
     title: string
     sortBy: string | null
+    filterBy: FilterBy
     onSortChange: (value: string) => void
+    onFilterChange: (filter: string) => void
 }
 
 export default function Grid(props: Props): ReactElement {
-    const { columnDef, data, isLoading, title, sortBy, onSortChange } = props
+    const { columnDef, filterBy, data, isLoading, title, sortBy, onSortChange, onFilterChange } = props
     const sortableColumns = getSortableColumns(columnDef)
-    const sortedFilteredData = getData(data, sortBy)
+    const sortedFilteredData = getData(data, sortBy, filterBy)
+    const filterOptions = getFilterOptions(columnDef, data)
 
     return (
         <div className="grid">
             <GridHeader
                 title={title}
-                dataCount={data.length}
-                totalCount={sortedFilteredData.length}
+                dataCount={sortedFilteredData.length}
+                totalCount={data.length}
                 sortableColumns={sortableColumns}
                 sortBy={sortBy}
+                filterBy={filterBy}
+                filterOptions={filterOptions}
                 onSortChange={onSortChange}
+                onFilterChange={onFilterChange}
             />
             {isLoading ? (
                 <div className="grid__loading">
-                    <div>loading</div>
+                    <div>
+                        <i className="fas fa-spinner fa-spin fa-2x"></i>
+                    </div>
                 </div>
             ) : (
                 <div className={`grid__table grid__table--grid-${columnDef.length}`}>

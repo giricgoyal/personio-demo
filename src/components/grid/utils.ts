@@ -1,11 +1,9 @@
+import { uniq } from 'lodash'
 import { Column, Row } from '.'
+import { FilterOption } from './filter'
+import { SortOption } from './sort'
 
-export const getSortableColumns = (
-    columnDef: Array<Column>,
-): Array<{
-    label: string
-    value: string
-}> =>
+export const getSortableColumns = (columnDef: Array<Column>): Array<SortOption> =>
     columnDef
         .filter((col) => col.sort)
         .map((col) => ({
@@ -25,8 +23,14 @@ const getSortParams = (
     }
 }
 
-export const getData = (data: Array<Row>, sortBy?: string | null): Array<Row> => {
-    const filteredData = data.filter((datum) => datum)
+export const getData = (data: Array<Row>, sortBy?: string | null, filterBy?: string | null): Array<Row> => {
+    const filterByKey = filterBy?.split(':')[0]
+    const filterByValue = filterBy?.split(':')[1]
+    const filterFn =
+        filterByKey && filterByValue
+            ? (datum) => datum[filterByKey].toLowerCase().includes(filterByValue.toLowerCase())
+            : (d) => d
+    const filteredData = data.filter(filterFn)
 
     if (sortBy) {
         const { col, isDescending } = getSortParams(sortBy)
@@ -42,3 +46,16 @@ export const getData = (data: Array<Row>, sortBy?: string | null): Array<Row> =>
 
     return filteredData
 }
+
+export const getFilterOptions = (colDefs: Array<Column>, data: Array<Row>): Array<FilterOption> =>
+    colDefs.reduce((accum: Array<FilterOption>, col) => {
+        if (col.filter) {
+            accum.push({
+                label: col.title,
+                value: col.propBinding,
+                filterValues: uniq(data.map((datum) => datum[col.propBinding])),
+            })
+        }
+
+        return accum
+    }, [])

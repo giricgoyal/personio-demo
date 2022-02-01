@@ -8,6 +8,7 @@ export const getColumns = (): Array<Column> => [
     {
         title: 'Name',
         propBinding: 'name',
+        filter: true,
     },
     {
         title: 'Email',
@@ -26,10 +27,12 @@ export const getColumns = (): Array<Column> => [
         title: 'Position Applied',
         propBinding: 'position_applied',
         sort: true,
+        filter: true,
     },
     {
         title: 'Status',
         propBinding: 'status',
+        filter: true,
     },
     {
         title: 'Years of experience',

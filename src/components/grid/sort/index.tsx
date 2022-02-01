@@ -2,13 +2,13 @@ import React, { ReactElement, useCallback } from 'react'
 import Select from 'src/components/select'
 import Button from 'src/components/button'
 
-type Option = {
+export type SortOption = {
     label: string
     value: string
 }
 
 type Props = {
-    sortOptions: Array<Option>
+    sortOptions: Array<SortOption>
     onChange: (value: string) => void
     sortBy: string | null
 }
@@ -34,9 +34,9 @@ export default function Sort(props: Props): ReactElement {
 
     return (
         <div>
+            <i className="fas fa-sort"></i>
             <Select
                 data-testid="select"
-                label="Sort by:"
                 options={sortOptions}
                 onChange={handleSelectChange}
                 selected={getSortBy(sortBy)}

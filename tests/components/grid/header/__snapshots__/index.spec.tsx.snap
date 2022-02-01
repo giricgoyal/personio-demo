@@ -30,14 +30,43 @@ Object {
           class="grid__header__right"
         >
           <div>
+            <i
+              class="fas fa-filter"
+            />
             <label
               class="select"
             >
               <span
                 class="select__label"
+              />
+              <select
+                class="select__element"
+                data-testid="filterby-select"
               >
-                Sort by:
-              </span>
+                <option
+                  value="col1"
+                >
+                  col1
+                </option>
+              </select>
+            </label>
+            <input
+              class="combo-box"
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+          </div>
+          <div>
+            <i
+              class="fas fa-sort"
+            />
+            <label
+              class="select"
+            >
+              <span
+                class="select__label"
+              />
               <select
                 class="select__element"
                 data-testid="select"
@@ -89,14 +118,43 @@ Object {
         class="grid__header__right"
       >
         <div>
+          <i
+            class="fas fa-filter"
+          />
           <label
             class="select"
           >
             <span
               class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
             >
-              Sort by:
-            </span>
+              <option
+                value="col1"
+              >
+                col1
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
             <select
               class="select__element"
               data-testid="select"

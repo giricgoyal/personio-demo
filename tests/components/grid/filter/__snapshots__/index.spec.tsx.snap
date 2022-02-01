@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid/filter When filterBy is provided should render and match snapshot 1`] = `
+<div>
+  <div>
+    <i
+      class="fas fa-filter"
+    />
+    <label
+      class="select"
+    >
+      <span
+        class="select__label"
+      />
+      <select
+        class="select__element"
+        data-testid="filterby-select"
+      >
+        <option
+          selected=""
+          value="col1"
+        >
+          col1
+        </option>
+        <option
+          value="col2"
+        >
+          col2
+        </option>
+      </select>
+    </label>
+    <input
+      class="combo-box"
+      data-testid="filter-value-input"
+      list="filter-value-input"
+      value="val2"
+    />
+    <datalist
+      id="filter-value-input"
+    >
+      <option
+        value="val1"
+      />
+      <option
+        value="val2"
+      />
+      <option
+        value="val3"
+      />
+    </datalist>
+  </div>
+</div>
+`;
+
+exports[`components/grid/filter should render and match snapshot 1`] = `
+<div>
+  <div>
+    <i
+      class="fas fa-filter"
+    />
+    <label
+      class="select"
+    >
+      <span
+        class="select__label"
+      />
+      <select
+        class="select__element"
+        data-testid="filterby-select"
+      >
+        <option
+          value="col1"
+        >
+          col1
+        </option>
+        <option
+          value="col2"
+        >
+          col2
+        </option>
+      </select>
+    </label>
+    <input
+      class="combo-box"
+      data-testid="filter-value-input"
+      list="filter-value-input"
+      value=""
+    />
+  </div>
+</div>
+`;

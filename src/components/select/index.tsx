@@ -8,7 +8,7 @@ type Option = {
 type Props = {
     label?: string
     options: Array<Option>
-    selected: string
+    selected?: string
     onChange: (value: string) => void
     'data-testid'?: string
 }

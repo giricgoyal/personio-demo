@@ -1,4 +1,4 @@
-import { getData, getSortableColumns } from 'src/components/grid/utils'
+import { getData, getFilterOptions, getSortableColumns } from 'src/components/grid/utils'
 
 describe('components/grid/utils', () => {
     describe('getSortableColumns()', () => {
@@ -34,7 +34,8 @@ describe('components/grid/utils', () => {
                 name: 'jane doe',
             },
         ]
-        test('should return sorted and filtered data', () => {
+
+        test('should return sorted data', () => {
             expect(getData(data, '-application_date')).toStrictEqual([
                 {
                     application_date: '2018-02-01',
@@ -43,6 +44,50 @@ describe('components/grid/utils', () => {
                 {
                     application_date: '2018-01-01',
                     name: 'john doe',
+                },
+            ])
+        })
+
+        test('should return sorted data and filtered data', () => {
+            expect(getData(data, '-application_date', 'name:jane')).toStrictEqual([
+                {
+                    application_date: '2018-02-01',
+                    name: 'jane doe',
+                },
+            ])
+        })
+    })
+
+    describe('getFilterOptions()', () => {
+        const colDefs = [
+            {
+                title: 'Name',
+                propBinding: 'name',
+                filter: true,
+            },
+            {
+                title: 'Application Date',
+                propBinding: 'application_date',
+            },
+        ]
+
+        const data = [
+            {
+                application_date: '2018-01-01',
+                name: 'john doe',
+            },
+            {
+                application_date: '2018-02-01',
+                name: 'jane doe',
+            },
+        ]
+
+        test('should return correct filter options', () => {
+            expect(getFilterOptions(colDefs, data)).toStrictEqual([
+                {
+                    label: 'Name',
+                    value: 'name',
+                    filterValues: ['john doe', 'jane doe'],
                 },
             ])
         })

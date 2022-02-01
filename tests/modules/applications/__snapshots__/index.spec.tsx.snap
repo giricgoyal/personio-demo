@@ -30,14 +30,53 @@ exports[`modules/applications When component is rendered first should render and
         class="grid__header__right"
       >
         <div>
+          <i
+            class="fas fa-filter"
+          />
           <label
             class="select"
           >
             <span
               class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
             >
-              Sort by:
-            </span>
+              <option
+                value="name"
+              >
+                Name
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="status"
+              >
+                Status
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
             <select
               class="select__element"
               data-testid="select"
@@ -149,14 +188,53 @@ exports[`modules/applications When data is loading should render and match snaps
         class="grid__header__right"
       >
         <div>
+          <i
+            class="fas fa-filter"
+          />
           <label
             class="select"
           >
             <span
               class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
             >
-              Sort by:
-            </span>
+              <option
+                value="name"
+              >
+                Name
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="status"
+              >
+                Status
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
             <select
               class="select__element"
               data-testid="select"
@@ -194,7 +272,9 @@ exports[`modules/applications When data is loading should render and match snaps
       class="grid__loading"
     >
       <div>
-        loading
+        <i
+          class="fas fa-spinner fa-spin fa-2x"
+        />
       </div>
     </div>
   </div>
@@ -231,14 +311,53 @@ exports[`modules/applications When data is present in store When sort is changed
         class="grid__header__right"
       >
         <div>
+          <i
+            class="fas fa-filter"
+          />
           <label
             class="select"
           >
             <span
               class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
             >
-              Sort by:
-            </span>
+              <option
+                value="name"
+              >
+                Name
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="status"
+              >
+                Status
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
             <select
               class="select__element"
               data-testid="select"
@@ -410,14 +529,53 @@ exports[`modules/applications When data is present in store should render and ma
         class="grid__header__right"
       >
         <div>
+          <i
+            class="fas fa-filter"
+          />
           <label
             class="select"
           >
             <span
               class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
             >
-              Sort by:
-            </span>
+              <option
+                value="name"
+              >
+                Name
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="status"
+              >
+                Status
+              </option>
+            </select>
+          </label>
+          <input
+            class="combo-box"
+            data-testid="filter-value-input"
+            list="filter-value-input"
+            value=""
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-sort"
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
             <select
               class="select__element"
               data-testid="select"

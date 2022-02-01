@@ -6,6 +6,7 @@ exports[`components/combo-box On value change should render and match snapshot 1
     class="combo-box"
     data-testid="input"
     list="combo-box"
+    value=""
   />
   <datalist
     id="combo-box"
@@ -29,6 +30,7 @@ exports[`components/combo-box should render and match snapshot 1`] = `
     class="combo-box"
     data-testid="input"
     list="combo-box"
+    value=""
   />
   <datalist
     id="combo-box"
