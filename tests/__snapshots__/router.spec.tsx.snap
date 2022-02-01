@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`router should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="grid__header"
+    >
+      <div
+        class="grid__header__left"
+      >
+        <div
+          class="grid__header__left__title"
+        >
+          Applications
+        </div>
+        <div
+          class="grid__header__left__data-count"
+        >
+          (
+          0
+          /
+          0
+          )
+        </div>
+      </div>
+      <div
+        class="grid__header__right"
+      >
+        <div
+          class="grid__header__right__filter"
+        >
+          <i
+            class="fas fa-filter "
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="filterby-select"
+            >
+              <option
+                selected=""
+                value="name"
+              >
+                Name
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="status"
+              >
+                Status
+              </option>
+            </select>
+            <i
+              class="fas fa-caret-down "
+            />
+          </label>
+          <label
+            class="combo-box"
+          >
+            <input
+              data-testid="filter-value-input"
+              list="filter-value-input"
+              value=""
+            />
+            
+          </label>
+        </div>
+        <div
+          class="grid__header__right__sort"
+        >
+          <i
+            class="fas fa-sort "
+          />
+          <label
+            class="select"
+          >
+            <span
+              class="select__label"
+            />
+            <select
+              class="select__element"
+              data-testid="select"
+            >
+              <option
+                selected=""
+                value="application_date"
+              >
+                Application Date
+              </option>
+              <option
+                value="position_applied"
+              >
+                Position Applied
+              </option>
+              <option
+                value="year_of_experience"
+              >
+                Years of experience
+              </option>
+            </select>
+            <i
+              class="fas fa-caret-down "
+            />
+          </label>
+          <button
+            class="button button--tertiary"
+            data-testid="sort-order-button"
+          >
+            <i
+              class="fas fa-arrow-down "
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid__table grid__table--grid-8"
+    >
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Id
+        </div>
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Name
+        </div>
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Email
+        </div>
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Birth Date
+        </div>
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Application Date
+        </div>
+        <i
+          class="fas fa-arrow-down "
+        />
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Position Applied
+        </div>
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label"
+        >
+          Status
+        </div>
+        
+      </div>
+      <div
+        class="grid__table__cell grid__table__cell--header"
+      >
+        <div
+          class="grid__table__cell--header__label grid__table__cell__label--number"
+        >
+          Years of experience
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
