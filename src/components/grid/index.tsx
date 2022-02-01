@@ -13,6 +13,7 @@ export type Column = {
     propBinding: string
     sort?: boolean
     filter?: boolean
+    type: string
 }
 
 export type Row = {

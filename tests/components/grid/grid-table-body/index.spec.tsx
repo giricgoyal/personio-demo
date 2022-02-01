@@ -10,6 +10,7 @@ describe('components/grid/grid-table-body', () => {
             propBinding: 'name',
             filter: true,
             sort: true,
+            type: 'string',
         },
     ]
 

@@ -15,6 +15,7 @@ const ICON_MAPPER = {
     spinner: 'fas fa-spinner',
     'arrow-up': 'fas fa-arrow-up',
     'arrow-down': 'fas fa-arrow-down',
+    profile: 'fas fa-user-circle',
 }
 
 const SIZE_MAPPER = {

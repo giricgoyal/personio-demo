@@ -11,6 +11,7 @@ describe('components/grid/grid-table-header', () => {
             propBinding: 'name',
             filter: true,
             sort: true,
+            type: 'string',
         },
     ]
 

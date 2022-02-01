@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React, { ReactElement } from 'react'
 import Icon from 'src/components/icon'
 import { Column } from '..'
@@ -19,13 +20,20 @@ export default function GridTableHeader(props: Props): ReactElement {
 
     return (
         <>
-            {columnDef.map((column) => (
-                <div className="grid__table__cell grid__table__cell--header" key={column.title}>
-                    <div className="grid__table__cell--header__label">{column.title}</div>
-                    {sortByCol === column.propBinding && <Icon icon={isDescending ? 'arrow-down' : 'arrow-up'} />}
-                    {filterValue && filterKey === column.propBinding && <Icon icon="filter" />}
-                </div>
-            ))}
+            {columnDef.map((column) => {
+                const className = classNames({
+                    'grid__table__cell--header__label': true,
+                    'grid__table__cell__label--number': column.type === 'number',
+                })
+
+                return (
+                    <div className="grid__table__cell grid__table__cell--header" key={column.title}>
+                        <div className={className}>{column.title}</div>
+                        {sortByCol === column.propBinding && <Icon icon={isDescending ? 'arrow-down' : 'arrow-up'} />}
+                        {filterValue && filterKey === column.propBinding && <Icon icon="filter" />}
+                    </div>
+                )
+            })}
         </>
     )
 }

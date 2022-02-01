@@ -7,10 +7,12 @@ describe('components/grid/utils', () => {
                 title: 'col 1',
                 propBinding: 'col1',
                 sort: true,
+                type: 'string',
             },
             {
                 title: 'col 2',
                 propBinding: 'col2',
+                type: 'number',
             },
         ]
         test('should return sortable columns', () => {
@@ -82,10 +84,12 @@ describe('components/grid/utils', () => {
                 title: 'Name',
                 propBinding: 'name',
                 filter: true,
+                type: 'string',
             },
             {
                 title: 'Application Date',
                 propBinding: 'application_date',
+                type: 'date',
             },
         ]
 

@@ -263,7 +263,7 @@ exports[`modules/applications When component is rendered first should render and
         class="grid__table__cell grid__table__cell--header"
       >
         <div
-          class="grid__table__cell--header__label"
+          class="grid__table__cell--header__label grid__table__cell__label--number"
         >
           Id
         </div>
@@ -336,7 +336,7 @@ exports[`modules/applications When component is rendered first should render and
         class="grid__table__cell grid__table__cell--header"
       >
         <div
-          class="grid__table__cell--header__label"
+          class="grid__table__cell--header__label grid__table__cell__label--number"
         >
           Years of experience
         </div>
@@ -613,7 +613,7 @@ exports[`modules/applications When data is present in store When sort is changed
         class="grid__table__cell grid__table__cell--header"
       >
         <div
-          class="grid__table__cell--header__label"
+          class="grid__table__cell--header__label grid__table__cell__label--number"
         >
           Id
         </div>
@@ -686,14 +686,14 @@ exports[`modules/applications When data is present in store When sort is changed
         class="grid__table__cell grid__table__cell--header"
       >
         <div
-          class="grid__table__cell--header__label"
+          class="grid__table__cell--header__label grid__table__cell__label--number"
         >
           Years of experience
         </div>
         
       </div>
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
         class="grid__table__cell"
@@ -720,10 +720,10 @@ exports[`modules/applications When data is present in store When sort is changed
         class="grid__table__cell"
       />
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
         class="grid__table__cell"
@@ -750,7 +750,7 @@ exports[`modules/applications When data is present in store When sort is changed
         class="grid__table__cell"
       />
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
     </div>
   </div>
@@ -893,7 +893,7 @@ exports[`modules/applications When data is present in store should render and ma
         class="grid__table__cell grid__table__cell--header"
       >
         <div
-          class="grid__table__cell--header__label"
+          class="grid__table__cell--header__label grid__table__cell__label--number"
         >
           Id
         </div>
@@ -966,14 +966,14 @@ exports[`modules/applications When data is present in store should render and ma
         class="grid__table__cell grid__table__cell--header"
       >
         <div
-          class="grid__table__cell--header__label"
+          class="grid__table__cell--header__label grid__table__cell__label--number"
         >
           Years of experience
         </div>
         
       </div>
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
         class="grid__table__cell"
@@ -1000,10 +1000,10 @@ exports[`modules/applications When data is present in store should render and ma
         class="grid__table__cell"
       />
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
       <div
         class="grid__table__cell"
@@ -1030,7 +1030,7 @@ exports[`modules/applications When data is present in store should render and ma
         class="grid__table__cell"
       />
       <div
-        class="grid__table__cell"
+        class="grid__table__cell grid__table__cell--number"
       />
     </div>
   </div>

@@ -8,7 +8,16 @@ Object {
       <div
         class="navbar"
       >
-        Personio
+        <div>
+          <img
+            src="./assets/images/logo.png"
+          />
+        </div>
+        <div>
+          <i
+            class="fas fa-user-circle fa-3x"
+          />
+        </div>
       </div>
     </div>
   </body>,
@@ -16,7 +25,16 @@ Object {
     <div
       class="navbar"
     >
-      Personio
+      <div>
+        <img
+          src="./assets/images/logo.png"
+        />
+      </div>
+      <div>
+        <i
+          class="fas fa-user-circle fa-3x"
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],
