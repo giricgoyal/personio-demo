@@ -11,13 +11,14 @@ export type FilterOption = {
 export type FilterBy = string | null
 
 type Props = {
+    className?: string
     filterOptions: Array<FilterOption>
     onChange: (filter: string) => void
     filterBy: FilterBy
 }
 
 export default function Filter(props: Props): ReactElement {
-    const { filterOptions, filterBy, onChange } = props
+    const { filterOptions, filterBy, onChange, className } = props
 
     const filterKey = filterBy?.split(':')[0]
     const filterValue = filterBy?.split(':')[1]
@@ -34,7 +35,7 @@ export default function Filter(props: Props): ReactElement {
     }
 
     return (
-        <div>
+        <div className={className}>
             <i className="fas fa-filter"></i>
             <Select
                 data-testid="filterby-select"

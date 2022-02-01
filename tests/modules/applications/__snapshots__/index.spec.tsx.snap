@@ -29,7 +29,9 @@ exports[`modules/applications When api error occurs should render and match snap
       <div
         class="grid__header__right"
       >
-        <div>
+        <div
+          class="grid__header__right__filter"
+        >
           <i
             class="fas fa-filter"
           />
@@ -67,7 +69,9 @@ exports[`modules/applications When api error occurs should render and match snap
             value=""
           />
         </div>
-        <div>
+        <div
+          class="grid__header__right__sort"
+        >
           <i
             class="fas fa-sort"
           />
@@ -115,14 +119,13 @@ exports[`modules/applications When api error occurs should render and match snap
     >
       An error occured
       <div>
-        <button
-          class="button button--tertiary"
+        <a
           data-testid="refresh-grid-button"
         >
           <i
             class="fas fa-sync fa-2x"
           />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -158,7 +161,9 @@ exports[`modules/applications When component is rendered first should render and
       <div
         class="grid__header__right"
       >
-        <div>
+        <div
+          class="grid__header__right__filter"
+        >
           <i
             class="fas fa-filter"
           />
@@ -196,7 +201,9 @@ exports[`modules/applications When component is rendered first should render and
             value=""
           />
         </div>
-        <div>
+        <div
+          class="grid__header__right__sort"
+        >
           <i
             class="fas fa-sort"
           />
@@ -239,7 +246,6 @@ exports[`modules/applications When component is rendered first should render and
         </div>
       </div>
     </div>
-    
     <div
       class="grid__table grid__table--grid-8"
     >
@@ -317,7 +323,9 @@ exports[`modules/applications When data is loading should render and match snaps
       <div
         class="grid__header__right"
       >
-        <div>
+        <div
+          class="grid__header__right__filter"
+        >
           <i
             class="fas fa-filter"
           />
@@ -355,7 +363,9 @@ exports[`modules/applications When data is loading should render and match snaps
             value=""
           />
         </div>
-        <div>
+        <div
+          class="grid__header__right__sort"
+        >
           <i
             class="fas fa-sort"
           />
@@ -398,7 +408,6 @@ exports[`modules/applications When data is loading should render and match snaps
         </div>
       </div>
     </div>
-    
     <div
       class="grid__loading"
     >
@@ -439,7 +448,9 @@ exports[`modules/applications When data is present in store When sort is changed
       <div
         class="grid__header__right"
       >
-        <div>
+        <div
+          class="grid__header__right__filter"
+        >
           <i
             class="fas fa-filter"
           />
@@ -477,7 +488,9 @@ exports[`modules/applications When data is present in store When sort is changed
             value=""
           />
         </div>
-        <div>
+        <div
+          class="grid__header__right__sort"
+        >
           <i
             class="fas fa-sort"
           />
@@ -520,7 +533,6 @@ exports[`modules/applications When data is present in store When sort is changed
         </div>
       </div>
     </div>
-    
     <div
       class="grid__table grid__table--grid-8"
     >
@@ -658,7 +670,9 @@ exports[`modules/applications When data is present in store should render and ma
       <div
         class="grid__header__right"
       >
-        <div>
+        <div
+          class="grid__header__right__filter"
+        >
           <i
             class="fas fa-filter"
           />
@@ -696,7 +710,9 @@ exports[`modules/applications When data is present in store should render and ma
             value=""
           />
         </div>
-        <div>
+        <div
+          class="grid__header__right__sort"
+        >
           <i
             class="fas fa-sort"
           />
@@ -739,7 +755,6 @@ exports[`modules/applications When data is present in store should render and ma
         </div>
       </div>
     </div>
-    
     <div
       class="grid__table grid__table--grid-8"
     >

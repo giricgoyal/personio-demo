@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/grid/grid-table should render and match snapshot 1`] = `
+<div>
+  <div
+    class="grid__table grid__table--grid-2"
+  >
+    <div />
+  </div>
+</div>
+`;

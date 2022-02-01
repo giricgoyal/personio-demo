@@ -36,8 +36,18 @@ export default function GridHeader(props: Props): ReactElement {
                 </div>
             </div>
             <div className="grid__header__right">
-                <Filter filterOptions={filterOptions} onChange={onFilterChange} filterBy={filterBy} />
-                <Sort sortOptions={sortableColumns} onChange={onSortChange} sortBy={sortBy} />
+                <Filter
+                    className="grid__header__right__filter"
+                    filterOptions={filterOptions}
+                    onChange={onFilterChange}
+                    filterBy={filterBy}
+                />
+                <Sort
+                    className="grid__header__right__sort"
+                    sortOptions={sortableColumns}
+                    onChange={onSortChange}
+                    sortBy={sortBy}
+                />
             </div>
         </div>
     )
