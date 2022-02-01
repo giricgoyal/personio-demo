@@ -7,8 +7,8 @@
     "start": "webpack-dev-server --open --config configs/webpack.dev.js",
     "build:dev": "webpack --config configs/webpack.dev.js -d",
     "build:prod": "webpack --config configs/webpack.prod.js && cp -r ./public/* ./dist",
-    "utest": "jest",
-    "utest:watch": "jest --watch",
+    "utest": "jest --coverage",
+    "utest:watch": "jest --coverage --watch",
     "utest:update-snapshot": "jest --updateSnapshot",
     "test": "yarn lint:test && yarn utest",
     "lint:test": "eslint \"src/**/*.{ts,tsx}\" --quiet",
@@ -97,6 +97,17 @@
       "jsx",
       "json"
     ],
+    "collectCoverage": true,
+    "coverageReporters": ["lcov"],
+    "coverageDirectory": "test-coverage",
+    "coverageThreshold": {
+      "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+      }
+    },
     "moduleDirectories": [
       "node_modules",
       "./"
