@@ -132,7 +132,40 @@
 <a name='L67'></a><a href='#L67'>67</a>
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">9x</span>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -141,6 +174,11 @@
 <span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-yes">110x</span>
 <span class="cline-any cline-yes">44x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -157,9 +195,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">54x</span>
 <span class="cline-any cline-yes">54x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -188,6 +238,12 @@
 <span class="cline-any cline-yes">19x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-yes">110x</span>
@@ -206,6 +262,11 @@ import { Column, Row } from '.'
 import { FilterBy, FilterOption } from './filter'
 import { SortBy, SortOption } from './sort'
 &nbsp;
+/**
+ * Get sortable columns from column defs in {label, value} format
+ * @param columnDef {Array&lt;Object&gt;} - Column definitions
+ * @returns {Array&lt;Object&gt;} List of sortable column definitions as {label, value}
+ */
 export const getSortableColumns = (columnDef: Array&lt;Column&gt;): Array&lt;SortOption&gt; =&gt;
     columnDef
         .filter((col) =&gt; col.sort)
@@ -214,6 +275,11 @@ export const getSortableColumns = (columnDef: Array&lt;Column&gt;): Array&lt;Sor
             value: col.propBinding,
         }))
 &nbsp;
+/**
+ * Get column name and sort direction from the applied sort string
+ * @param sortBy {string} - The sort by string (-)?(column-key)
+ * @returns {sortByCol: string, isDescending: boolean}
+ */
 export const getSortParams = (
     sortBy: SortBy,
 ): {
@@ -226,6 +292,11 @@ export const getSortParams = (
     }
 }
 &nbsp;
+/**
+ * Get filter column and filter value from the applied filter string
+ * @param filterBy {string} - Filter string column:value
+ * @returns {filterKey: string, filterValue: string}
+ */
 export const getFilterBy = (filterBy: FilterBy = ''): { filterKey: string; filterValue: string } =&gt; {
     const [filterKey, filterValue] = filterBy?.split(':') ?? <span class="branch-1 cbranch-no" title="branch not covered" >['', '']</span>
     return {
@@ -234,7 +305,14 @@ export const getFilterBy = (filterBy: FilterBy = ''): { filterKey: string; filte
     }
 }
 &nbsp;
-export const getData = (data: Array&lt;Row&gt;, sortBy?: string | null, filterBy?: FilterBy): Array&lt;Row&gt; =&gt; {
+/**
+ * Get the sorted and filtered grid data based on sort and filters applied
+ * @param data {Array&lt;Object&gt;} - List of row data
+ * @param sortBy {string} - The sort by string
+ * @param filterBy {string} - The filter by string
+ * @returns {Array&lt;Object&gt;} - The list of data rows, sorted and filtered according to sort and filter applied
+ */
+export const getData = (data: Array&lt;Row&gt;, sortBy?: SortBy, filterBy?: FilterBy): Array&lt;Row&gt; =&gt; {
     const { filterKey, filterValue } = getFilterBy(filterBy)
     const filterFn =
         filterKey &amp;&amp; filterValue
@@ -257,6 +335,12 @@ export const getData = (data: Array&lt;Row&gt;, sortBy?: string | null, filterBy
     return filteredData
 }
 &nbsp;
+/**
+ * Get filter options from the column defitions with filter valus for each filter
+ * @param colDefs {Array&lt;Object&gt;} - The Column definitions
+ * @param data - {Array&lt;Object&gt;} - The row data
+ * @returns {Array&lt;Object&gt;} - List of filter Options for the filters
+ */
 export const getFilterOptions = (colDefs: Array&lt;Column&gt;, data: Array&lt;Row&gt;): Array&lt;FilterOption&gt; =&gt;
     colDefs.reduce((accum: Array&lt;FilterOption&gt;, col) =&gt; {
         const { filter, title, propBinding, format = (val) =&gt; val } = col
@@ -277,7 +361,7 @@ export const getFilterOptions = (colDefs: Array&lt;Column&gt;, data: Array&lt;Ro
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Feb 02 2022 14:57:34 GMT+0530 (India Standard Time)
+                at Wed Feb 02 2022 17:05:54 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../prettify.js"></script>
         <script>
