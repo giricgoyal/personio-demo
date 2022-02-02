@@ -1,6 +1,10 @@
 import { startCase } from 'lodash'
 import { Column } from 'src/components/grid'
 
+/**
+ * Get the column definitions
+ * @returns {Array<Object>}
+ */
 export const getColumns = (): Array<Column> => [
     {
         title: 'Id',

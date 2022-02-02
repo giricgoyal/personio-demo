@@ -13,7 +13,7 @@ type Props = {
 }
 
 export default function GridTableHeader(props: Props): ReactElement {
-    const { columnDef, sortBy, filterBy } = props
+    const { columnDef, sortBy = '', filterBy = '' } = props
 
     const { sortByCol, isDescending } = getSortParams(sortBy)
     const { filterKey, filterValue } = getFilterBy(filterBy)

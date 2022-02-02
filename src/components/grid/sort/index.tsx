@@ -9,7 +9,7 @@ export type SortOption = {
     value: string
 }
 
-export type SortBy = string | null | undefined
+export type SortBy = string
 
 type Props = {
     className?: string

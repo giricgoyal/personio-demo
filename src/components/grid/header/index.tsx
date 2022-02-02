@@ -1,13 +1,13 @@
 import React, { ReactElement } from 'react'
 import Filter, { FilterBy, FilterOption } from '../filter'
-import Sort, { SortOption } from '../sort'
+import Sort, { SortBy, SortOption } from '../sort'
 
 type Props = {
     dataCount: number
     title: string
     totalCount: number
     sortableColumns: Array<SortOption>
-    sortBy: string | null
+    sortBy: SortBy
     filterBy: FilterBy
     filterOptions: Array<FilterOption>
     onSortChange: (value: string) => void
