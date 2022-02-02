@@ -2,7 +2,7 @@ import { call, CallEffect, fork, put, PutEffect, takeLatest } from 'redux-saga/e
 import { FETCH_CANDIDATES } from './action-types'
 import { setCandidatesData, setError, setIsLoading } from './actions'
 import { ACTION } from './types'
-import { CANDIDATE_RESPONSE, getCandidates } from 'src/common/endpoints'
+import { CANDIDATE_RESPONSE, getCandidates } from 'src/common/endpoints/candidates'
 
 export function* fetchCandidates(): Generator<
     CallEffect<CANDIDATE_RESPONSE> | PutEffect<ACTION>,

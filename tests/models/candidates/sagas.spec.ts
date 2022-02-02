@@ -1,7 +1,7 @@
 import { call, put } from 'redux-saga/effects'
 import { setCandidatesData, setError, setIsLoading } from 'src/models/candidates/actions'
 import { fetchCandidates } from 'src/models/candidates/sagas'
-import { getCandidates } from 'src/common/endpoints'
+import { getCandidates } from 'src/common/endpoints/candidates'
 
 describe('models/candidates/sagas', () => {
     describe('fetchCandidates()', () => {
