@@ -1,9 +1,8 @@
 import axios from 'axios'
-import { CANDIDATE } from 'src/models/candidates/types'
 import { API_BASE_URL } from './constants'
 
 export type API_DATA = {
-    data?: Array<CANDIDATE>
+    data?: Record<string, unknown>[]
     error?: {
         code: number
         message: string
