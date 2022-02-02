@@ -129,7 +129,10 @@ exports[`modules/applications When api error occurs should render and match snap
       class="grid__error"
     >
       An error occured
-      <div>
+      <div
+        class="grid__error__refresh"
+      >
+        Click
         <a
           data-testid="refresh-grid-button"
         >
@@ -137,6 +140,7 @@ exports[`modules/applications When api error occurs should render and match snap
             class="fas fa-sync fa-2x"
           />
         </a>
+        to refresh.
       </div>
     </div>
   </div>

@@ -359,7 +359,10 @@ exports[`components/grid When not loading When error occured should render and m
       class="grid__error"
     >
       an error occured
-      <div>
+      <div
+        class="grid__error__refresh"
+      >
+        Click
         <a
           data-testid="refresh-grid-button"
         >
@@ -367,6 +370,7 @@ exports[`components/grid When not loading When error occured should render and m
             class="fas fa-sync fa-2x"
           />
         </a>
+        to refresh.
       </div>
     </div>
   </div>
