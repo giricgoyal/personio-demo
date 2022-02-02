@@ -3,26 +3,31 @@
 ## Setup
 
 ### Prerequisites:
-- node with npm
-- yarn
-- webpack, webpack-cli
+
+-   node with npm
+-   yarn
+-   webpack, webpack-cli
 
 ### How to setup dev env
-- Install dependencies:
+
+-   Install dependencies:
 
 `yarn`
 
-- Run local server:
+-   Build once to copy assets
+
+`yarn build:prod`
+
+-   Run local server:
 
 `yarn start`
 
-- Navigate to `http://localhost:3001`
-
+-   Navigate to `http://localhost:3001`
 
 ### Unit tests
-- Run:
 
- `yarn test`
+-   Run:
 
- - View coverage report in `test-coverage/lcov-report/index/html`
+`yarn test`
 
+-   View coverage report in `test-coverage/lcov-report/index/html`

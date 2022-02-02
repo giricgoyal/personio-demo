@@ -1,3 +1,4 @@
+import { startCase } from 'lodash'
 import { Column } from 'src/components/grid'
 
 export const getColumns = (): Array<Column> => [
@@ -40,9 +41,10 @@ export const getColumns = (): Array<Column> => [
         propBinding: 'status',
         filter: true,
         type: 'string',
+        format: (value) => startCase(`${value}`),
     },
     {
-        title: 'Years of experience',
+        title: 'Years of Experience',
         propBinding: 'year_of_experience',
         sort: true,
         type: 'number',

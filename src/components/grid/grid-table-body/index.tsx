@@ -12,14 +12,14 @@ export default function GridTableBody(props: Props): ReactElement {
     return (
         <>
             {data.map((row, rowIndex) =>
-                columnDef.map((column, colIndex) => {
+                columnDef.map(({ type, propBinding, format = (val) => val }, colIndex) => {
                     const className = classNames({
                         grid__table__cell: true,
-                        'grid__table__cell--number': column.type === 'number',
+                        'grid__table__cell--number': type === 'number',
                     })
                     return (
                         <div className={className} key={`cell_${rowIndex}_${colIndex}`}>
-                            {row[column.propBinding]}
+                            {format(row[propBinding])}
                         </div>
                     )
                 }),

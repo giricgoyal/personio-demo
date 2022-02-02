@@ -1,3 +1,4 @@
+import { upperCase } from 'lodash'
 import React from 'react'
 import GridTableBody from 'src/components/grid/grid-table-body'
 import { render } from 'tests/test-utils'
@@ -11,6 +12,7 @@ describe('components/grid/grid-table-body', () => {
             filter: true,
             sort: true,
             type: 'string',
+            format: (val) => upperCase(val),
         },
     ]
 

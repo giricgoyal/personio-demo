@@ -14,6 +14,7 @@ export type Column = {
     sort?: boolean
     filter?: boolean
     type: string
+    format?: (value: string | number) => string | number
 }
 
 export type Row = {

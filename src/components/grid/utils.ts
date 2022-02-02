@@ -56,11 +56,12 @@ export const getData = (data: Array<Row>, sortBy?: string | null, filterBy?: Fil
 
 export const getFilterOptions = (colDefs: Array<Column>, data: Array<Row>): Array<FilterOption> =>
     colDefs.reduce((accum: Array<FilterOption>, col) => {
-        if (col.filter) {
+        const { filter, title, propBinding, format = (val) => val } = col
+        if (filter) {
             accum.push({
-                label: col.title,
-                value: col.propBinding,
-                filterValues: uniq(data.map((datum) => datum[col.propBinding])),
+                label: title,
+                value: propBinding,
+                filterValues: uniq(data.map((datum) => format(datum[propBinding]))),
             })
         }
 

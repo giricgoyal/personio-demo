@@ -107,7 +107,7 @@ exports[`router should render and match snapshot 1`] = `
               <option
                 value="year_of_experience"
               >
-                Years of experience
+                Years of Experience
               </option>
             </select>
             <i
@@ -207,7 +207,7 @@ exports[`router should render and match snapshot 1`] = `
         <div
           class="grid__table__cell--header__label grid__table__cell__label--number"
         >
-          Years of experience
+          Years of Experience
         </div>
         
       </div>
