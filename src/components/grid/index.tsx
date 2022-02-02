@@ -6,6 +6,7 @@ import GridTable from './grid-table'
 import GridTableBody from './grid-table-body'
 import GridTableHeader from './grid-table-header'
 import GridHeader from './header'
+import { SortBy } from './sort'
 import { getData, getFilterOptions, getSortableColumns } from './utils'
 
 export type Column = {
@@ -27,7 +28,7 @@ type Props = {
     error?: string
     isLoading?: boolean
     title: string
-    sortBy: string | null
+    sortBy: SortBy
     filterBy: FilterBy
     onSortChange: (value: string) => void
     onFilterChange: (filter: string) => void

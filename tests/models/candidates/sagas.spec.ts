@@ -1,20 +1,9 @@
 import { call, put } from 'redux-saga/effects'
-import { getData } from 'src/common/api'
 import { setCandidatesData, setError, setIsLoading } from 'src/models/candidates/actions'
 import { fetchCandidates } from 'src/models/candidates/sagas'
-import * as api from 'src/common/api'
+import { getCandidates } from 'src/common/endpoints/candidates'
 
 describe('models/candidates/sagas', () => {
-    beforeEach(() => {
-        jest.spyOn(api, 'getData').mockImplementation(async () => ({
-            data: [
-                {
-                    name: 'john doe',
-                },
-            ],
-        }))
-    })
-
     describe('fetchCandidates()', () => {
         describe('on success', () => {
             const gen = fetchCandidates()
@@ -23,8 +12,8 @@ describe('models/candidates/sagas', () => {
                 expect(gen.next().value).toStrictEqual(put(setIsLoading(true)))
             })
 
-            test('should call getData ', () => {
-                expect(gen.next().value).toStrictEqual(call(api.getData, 'candidates'))
+            test('should call getCandidates ', () => {
+                expect(gen.next().value).toStrictEqual(call(getCandidates))
             })
 
             test('should put candidate data', () => {
@@ -56,7 +45,7 @@ describe('models/candidates/sagas', () => {
             })
 
             test('should call getData ', () => {
-                expect(gen.next().value).toStrictEqual(call(api.getData, 'candidates'))
+                expect(gen.next().value).toStrictEqual(call(getCandidates))
             })
 
             test('should put setError false', () => {

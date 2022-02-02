@@ -58,8 +58,8 @@ export default function Applications(): React.ReactElement {
                 error={error}
                 isLoading={isLoading}
                 title="Applications"
-                sortBy={searchParams.get('sort')}
-                filterBy={searchParams.get('filter')}
+                sortBy={searchParams.get('sort') ?? ''}
+                filterBy={searchParams.get('filter') ?? ''}
                 onSortChange={handleSortChange}
                 onFilterChange={handleFilterChange}
                 onGridRefresh={handleGridRefresh}

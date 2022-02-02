@@ -10,7 +10,7 @@ export type FilterOption = {
     filterValues: Array<string | number>
 }
 
-export type FilterBy = string | null | undefined
+export type FilterBy = string
 
 type Props = {
     className?: string
