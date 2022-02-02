@@ -56,6 +56,14 @@
         gap: 10px;
     }
 
+    &__error {
+        &__refresh {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
     &__table {
         max-height: calc(100% - 60px);
         overflow: auto;

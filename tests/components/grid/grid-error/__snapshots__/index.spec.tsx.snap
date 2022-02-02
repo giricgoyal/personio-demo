@@ -8,7 +8,10 @@ exports[`components/grid/grid-error should render and match snapshot 1`] = `
     class="grid__error"
   >
     an error
-    <div>
+    <div
+      class="grid__error__refresh"
+    >
+      Click
       <a
         data-testid="refresh-grid-button"
       >
@@ -16,6 +19,7 @@ exports[`components/grid/grid-error should render and match snapshot 1`] = `
           class="fas fa-sync fa-2x"
         />
       </a>
+      to refresh.
     </div>
   </div>
 </div>

@@ -16,10 +16,12 @@ export default function GridError(props: Props): ReactElement | null {
     return (
         <div className="grid__error">
             {error}
-            <div>
+            <div className="grid__error__refresh">
+                Click
                 <a onClick={onGridRefresh} data-testid="refresh-grid-button">
                     <Icon icon="refresh" size="medium" />
                 </a>
+                to refresh.
             </div>
         </div>
     )

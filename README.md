@@ -14,10 +14,6 @@
 
 `yarn`
 
--   Build once to copy assets
-
-`yarn build:prod`
-
 -   Run local server:
 
 `yarn start`
