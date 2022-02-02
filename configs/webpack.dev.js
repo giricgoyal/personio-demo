@@ -15,7 +15,7 @@ module.exports = function(configDirs) {
         historyApiFallback: true,
         watchFiles: 'src/*'
     }
-    devConfig.devtool = "source-map",
+    devConfig.devtool = "eval-source-map"
 
     console.log('\x1b[36m%s\x1b[0m', 'Building for development...');
 
