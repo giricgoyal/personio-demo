@@ -4,7 +4,7 @@
   "description": "Personio Demo",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config configs/webpack.dev.js",
+    "start": "webpack-dev-server --config configs/webpack.dev.js",
     "build:dev": "webpack --config configs/webpack.dev.js -d",
     "build:prod": "webpack --config configs/webpack.prod.js && cp -r ./public/* ./dist",
     "utest": "jest --coverage",
