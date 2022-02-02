@@ -5,17 +5,17 @@ exports[`components/grid/grid-table-body should render and match snapshot 1`] = 
   <div
     class="grid__table__cell"
   >
-    John
+    JOHN
   </div>
   <div
     class="grid__table__cell"
   >
-    Jane
+    JANE
   </div>
   <div
     class="grid__table__cell"
   >
-    Ray
+    RAY
   </div>
 </div>
 `;
