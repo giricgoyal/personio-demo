@@ -1,8 +1,8 @@
-import * as React from 'react'
+import React, { ReactElement } from 'react'
 import Navbar from './components/navbar'
 import Router from './router'
 
-export default function App(): React.ReactElement {
+export default function App(): ReactElement {
     return (
         <>
             <Navbar />

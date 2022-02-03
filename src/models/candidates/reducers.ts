@@ -1,4 +1,4 @@
-import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA, SET_ERROR } from './action-types'
+import { FETCH_CANDIDATES, SET_LOADING, SET_CANDIDATES_DATA, SET_ERROR } from './action-types'
 import { ACTION, CANDIDATE } from './types'
 
 export const initialState = {
@@ -30,7 +30,7 @@ const candidates = (
                 ...payload,
             }
         }
-        case FETCH_CANDIDATES_SET_LOADING: {
+        case SET_LOADING: {
             return {
                 ...state,
                 ...payload,
