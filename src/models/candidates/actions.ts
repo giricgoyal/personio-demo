@@ -1,4 +1,4 @@
-import { FETCH_CANDIDATES, FETCH_CANDIDATES_SET_LOADING, SET_CANDIDATES_DATA, SET_ERROR } from './action-types'
+import { FETCH_CANDIDATES, SET_LOADING, SET_CANDIDATES_DATA, SET_ERROR } from './action-types'
 import { CANDIDATE } from './types'
 
 export const fetchCandidates = (): {
@@ -29,7 +29,7 @@ export const setIsLoading = (
         isLoading: boolean
     }
 } => ({
-    type: FETCH_CANDIDATES_SET_LOADING,
+    type: SET_LOADING,
     payload: {
         isLoading,
     },
