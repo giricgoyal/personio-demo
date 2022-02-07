@@ -1,4 +1,4 @@
-import { call, CallEffect, fork, put, PutEffect, takeLatest } from 'redux-saga/effects'
+import { call, CallEffect, put, PutEffect, takeLatest } from 'redux-saga/effects'
 import { FETCH_CANDIDATES } from './action-types'
 import { setCandidatesData, setError, setIsLoading } from './actions'
 import { ACTION } from './types'
@@ -25,8 +25,6 @@ export function* fetchCandidates(): Generator<
     }
 }
 
-function* fetchCandidatesSaga() {
-    yield takeLatest(FETCH_CANDIDATES, fetchCandidates)
-}
+const fetchCandidatesSaga = takeLatest(FETCH_CANDIDATES, fetchCandidates)
 
-export default [fork(fetchCandidatesSaga)]
+export default [fetchCandidatesSaga]

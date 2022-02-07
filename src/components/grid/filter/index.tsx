@@ -32,7 +32,11 @@ export default function Filter(props: Props): ReactElement {
     }
 
     const handleFilterValueChange = (value: string) => {
-        onChange(getFilterString(filterKey, value))
+        if (!value) {
+            onChange('')
+        } else {
+            onChange(getFilterString(filterKey, value))
+        }
     }
 
     return (
