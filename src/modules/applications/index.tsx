@@ -34,12 +34,15 @@ export default function Applications(): ReactElement {
 
     const handleFilterChange = useCallback(
         (filter) => {
-            const oldSearchParams: { sort?: string } = {}
+            const oldSearchParams: { sort?: string; filter?: string } = {}
             const appliedSort = searchParams.get('sort')
             if (appliedSort) {
                 oldSearchParams.sort = appliedSort
             }
-            setSearchParams({ filter, ...oldSearchParams })
+            if (filter) {
+                oldSearchParams.filter = filter
+            }
+            setSearchParams(oldSearchParams)
         },
         [searchParams],
     )
